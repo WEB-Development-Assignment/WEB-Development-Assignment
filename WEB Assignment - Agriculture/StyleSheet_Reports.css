@@ -1,0 +1,52 @@
+﻿body {
+    background-color: limegreen;
+}
+
+#banner {
+    height: 200px;
+    border: 3px solid #E3E3E3;
+    background-image: url(https://www.globalcommunities.org/files/images/ecaf-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrapper ul {
+    list-style: none;
+}
+
+#wrapper ul li {
+    background-color: green;
+    border: solid 1px limegreen;
+    width: 178px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    float: left;
+    position: relative;
+    border-radius: 10px;
+}    
+
+#wrapper ul li a {
+     text-decoration: none;
+     color: white;
+     display: block;
+     font-size: 20px;
+}
+
+#wrapper ul li a:hover {
+      background-color: greenyellow;
+      color: black;
+      height: 40px;
+      border-radius: 10px;
+}
+
+#footer {
+    clear: both;
+    width: auto;
+    height: 60px;
+    background-image: url(https://image.shutterstock.com/image-photo/panoramic-collection-fresh-fruits-vegetables-260nw-769458256.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
