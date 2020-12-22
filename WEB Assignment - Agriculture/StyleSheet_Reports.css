@@ -40,6 +40,67 @@
       border-radius: 10px;
 }
 
+.ReportBox {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 850px;
+    height: 1025px;
+    padding: 80px 30px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: forestgreen;
+    font-size: 40px;
+}
+
+.lblNIC, .lblName, .lblContactNo, .lblNIC, .lblCropType {
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+
+.txtNIC, .txtName, .txtContactNo, .txtCropType, .btnSubmit {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.txtNIC, .txtName, .txtContactNo, .txtCropType {
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: rgb(85, 75, 75);
+}
+
+.btnSubmit {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(255, 9, 9);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+.btnSubmit:hover {
+     background-color: #4cff00;
+}
+
 #footer {
     clear: both;
     width: auto;

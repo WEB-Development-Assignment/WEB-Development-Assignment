@@ -11,7 +11,10 @@ namespace WEB_Assignment___Agriculture
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(!IsPostBack)
+            {
+                CalendarMFD.Visible = false;
+            }
         }
     }
 }

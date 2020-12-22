@@ -25,17 +25,45 @@
                     <li><a href="SignUp.aspx">Sign Up</a></li>
                 </ul>
 
-                <div id="content">
-                    <br />                    
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                </div>
+                <br /><br /><br /><br />
+                
+                <div class="ReportBox">
+                <h2>REPORT</h2><br /><br /><br />
+                                        
+                    <asp:Label Text="NIC" CssClass="lblNIC" runat="server" />
+                    <asp:TextBox runat="server" CssClass="txtNIC" placeholder="Enter NIC" /><br />
+                    
+                    <asp:Label Text="Name" CssClass="lblName" runat="server" />
+                    <asp:TextBox runat="server" CssClass="txtName" placeholder="Enter Name" /><br />
+
+                    <asp:Label Text="Contact No" CssClass="lblContactNo" runat="server" />
+                    <asp:TextBox runat="server" CssClass="txtContactNo" placeholder="Enter Contact No" /><br />
+
+                    <asp:Label Text="Crop Type" CssClass="lblCropType" runat="server" />
+                    <asp:TextBox runat="server" CssClass="txtCropType" placeholder="Enter Crop Type" /><br />
+
+                    <asp:Label Text="Crop MFD" CssClass="lblMFD" runat="server" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <asp:TextBox runat="server" CssClass="txtMFD" />&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButtonMFD" runat="server" ImageUrl="https://png.pngtree.com/png-vector/20190216/ourlarge/pngtree-vector-calendar-icon-png-image_540870.jpg" ImageAlign="AbsBottom" Height="30px" Width="30px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <asp:Label Text="Crop MFD" CssClass="lblMFD" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:TextBox runat="server" CssClass="txtMFD" />&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="https://png.pngtree.com/png-vector/20190216/ourlarge/pngtree-vector-calendar-icon-png-image_540870.jpg" ImageAlign="AbsBottom" Height="30px" Width="30px"/><br /><br />
+                    
+                    <asp:Calendar Text="MFD" CssClass="CalendarMFD" runat="server" ID="CalendarMFD" SelectedDate="12/22/2020 19:44:32">
+                    </asp:Calendar>&nbsp;&nbsp;
+
+                    <asp:Calendar Text="EXD" CssClass="CalendarEXD" runat="server" ID="CalendarEXD" SelectedDate="12/22/2020 19:44:32">
+                    </asp:Calendar>
+
+                    <br /><br /><br /><br /><br /><br /><br />
+
+                    <asp:Button Text="Submit" CssClass="btnSubmit" runat="server" />     
+                    
+                  </div>
+                    
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
                 <div id="footer">
                     <p><br />@All right reserved 2020</p>
