@@ -24,6 +24,15 @@ namespace WEB_Assignment___Agriculture
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// lblError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError;
+
+        /// <summary>
         /// txtNIC control.
         /// </summary>
         /// <remarks>
@@ -60,58 +69,58 @@ namespace WEB_Assignment___Agriculture
         protected global::System.Web.UI.WebControls.TextBox txtCropType;
 
         /// <summary>
-        /// txtMFD control.
+        /// txtMFG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMFD;
+        protected global::System.Web.UI.WebControls.TextBox txtMFG;
 
         /// <summary>
-        /// ImageButtonMFD control.
+        /// ImageButtonMFG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButtonMFD;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButtonMFG;
 
         /// <summary>
-        /// txtEXD control.
+        /// txtEXP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEXD;
+        protected global::System.Web.UI.WebControls.TextBox txtEXP;
 
         /// <summary>
-        /// ImageButtonEXD control.
+        /// ImageButtonEXP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButtonEXD;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButtonEXP;
 
         /// <summary>
-        /// CalendarMFD control.
+        /// CalendarMFG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar CalendarMFD;
+        protected global::System.Web.UI.WebControls.Calendar CalendarMFG;
 
         /// <summary>
-        /// CalendarEXD control.
+        /// CalendarEXP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar CalendarEXD;
+        protected global::System.Web.UI.WebControls.Calendar CalendarEXP;
 
         /// <summary>
         /// btnSubmit control.

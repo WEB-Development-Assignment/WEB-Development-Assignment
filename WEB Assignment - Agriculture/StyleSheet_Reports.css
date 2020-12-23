@@ -46,7 +46,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 850px;
-    height: 1100px;
+    height: 1050px;
     padding: 80px 30px;
     box-sizing: border-box;
     background-color: white;
@@ -60,18 +60,24 @@ h2 {
     font-size: 40px;
 }
 
-.lblNIC, .lblName, .lblContactNo, .lblNIC, .lblCropType, .lblMFD, .lblEXD, .lblLocation {
+.lblError {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lblNIC, .lblName, .lblContactNo, .lblNIC, .lblCropType, .lblMFG, .lblEXP, .lblLocation {
     font-weight: bold;
     color: black;
     font-size: 18px;
 }
 
-.txtNIC, .txtName, .txtContactNo, .txtCropType, .txtMFD, .txtEXD, .txtLocation, .btnSubmit {
+.txtNIC, .txtName, .txtContactNo, .txtCropType, .txtMFG, .txtEXP, .txtLocation, .btnSubmit {
     width: 30%;
     margin-bottom: -20px;
 }
 
-.txtNIC, .txtName, .txtContactNo, .txtCropType, .txtMFD, .txtEXD, .txtLocation {
+.txtNIC, .txtName, .txtContactNo, .txtCropType, .txtMFG, .txtEXP, .txtLocation {
     border: none;
     border-bottom: 3px solid black;
     outline: none;
@@ -81,11 +87,11 @@ h2 {
     background-color: transparent;
 }
 
-.CalendarMFD{
+.CalendarMFG {
     left: 12.9%;
 }
 
-.CalendarEXD {
+.CalendarEXP {
     left: 63%;
 }
 
