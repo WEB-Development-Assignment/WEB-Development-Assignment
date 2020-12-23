@@ -45,8 +45,8 @@
     top: 135%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 825px;
-    height: 1025px;
+    width: 850px;
+    height: 1100px;
     padding: 80px 30px;
     box-sizing: border-box;
     background-color: white;
@@ -63,7 +63,7 @@ h2 {
 .lblNIC, .lblName, .lblContactNo, .lblNIC, .lblCropType, .lblMFD, .lblEXD, .lblLocation {
     font-weight: bold;
     color: black;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .txtNIC, .txtName, .txtContactNo, .txtCropType, .txtMFD, .txtEXD, .txtLocation, .btnSubmit {
@@ -91,10 +91,6 @@ h2 {
 
 ::placeholder {
     color: rgb(85, 75, 75);
-}
-
-.Map {
-    left:50%;
 }
 
 .btnSubmit {
