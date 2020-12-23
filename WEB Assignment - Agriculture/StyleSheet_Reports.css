@@ -42,10 +42,10 @@
 
 .ReportBox {
     position: absolute;
-    top: 105%;
+    top: 135%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 850px;
+    width: 825px;
     height: 1025px;
     padding: 80px 30px;
     box-sizing: border-box;
@@ -60,18 +60,18 @@ h2 {
     font-size: 40px;
 }
 
-.lblNIC, .lblName, .lblContactNo, .lblNIC, .lblCropType {
+.lblNIC, .lblName, .lblContactNo, .lblNIC, .lblCropType, .lblMFD, .lblEXD, .lblLocation {
     font-weight: bold;
     color: black;
     font-size: 15px;
 }
 
-.txtNIC, .txtName, .txtContactNo, .txtCropType, .btnSubmit {
-    width: 100%;
-    margin-bottom: 20px;
+.txtNIC, .txtName, .txtContactNo, .txtCropType, .txtMFD, .txtEXD, .txtLocation, .btnSubmit {
+    width: 30%;
+    margin-bottom: -20px;
 }
 
-.txtNIC, .txtName, .txtContactNo, .txtCropType {
+.txtNIC, .txtName, .txtContactNo, .txtCropType, .txtMFD, .txtEXD, .txtLocation {
     border: none;
     border-bottom: 3px solid black;
     outline: none;
@@ -81,11 +81,21 @@ h2 {
     background-color: transparent;
 }
 
+.CalendarMFD{
+    left: 12.9%;
+}
+
+.CalendarEXD {
+    left: 63%;
+}
+
 ::placeholder {
     color: rgb(85, 75, 75);
 }
 
 .btnSubmit {
+    padding: 0;
+    margin: 0;
     border: none;
     outline: none;
     height: 40px;
@@ -95,6 +105,7 @@ h2 {
     cursor: pointer;
     border-radius: 20px;
     transition: .3s ease-in-out;
+    text-align: center;
 }
 
 .btnSubmit:hover {
