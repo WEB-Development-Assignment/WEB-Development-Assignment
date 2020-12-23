@@ -17,6 +17,7 @@ namespace WEB_Assignment___Agriculture
             {
                 CalendarMFD.Visible = false;
                 CalendarEXD.Visible = false;
+                m
             }
         }
 
@@ -51,6 +52,7 @@ namespace WEB_Assignment___Agriculture
         {
             txtEXD.Text = CalendarEXD.SelectedDate.ToString("dd/MM/yyyy");
             CalendarEXD.Visible = false;
+
         }
 
         protected void CalendarMFD_SelectionChanged(object sender, EventArgs e)
@@ -64,15 +66,15 @@ namespace WEB_Assignment___Agriculture
             try
             {
                 SqlConnection con = new SqlConnection("Data Source=DESKTOP-VHPDJKD;Initial Catalog=DoA;Integrated Security=True");
-                SqlCommand cmd = new SqlCommand(@"INSERT INTO Reports (F_NIC, F_Name, F_Contact_No, F_Crop_Type, F_MFD, F_EXP, F_Location) VALUES ('" + txtNIC.Text + "' , '" + txtName.Text + "' , '" + txtContactNo.Text + "' , '" + txtCropType.Text + "' , '" + txtMFD.Text.ToString() + "' , '" + txtEXD.Text.ToString() + "' , '" + "" + "')", con);
+                SqlCommand cmd = new SqlCommand(@"INSERT INTO Reports (F_NIC, F_Name, F_Contact_No, F_Crop_Type, F_MFD, F_EXP, F_Location) VALUES ('" + txtNIC.Text + "' , '" + txtName.Text + "' , '" + txtContactNo.Text + "' , '" + txtCropType.Text + "' , '" + txtMFD.Text + "' , '" + txtEXD.Text + "' , '" + "" + "')", con);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
-                Response.Redirect("<script>Alert('SUCCESSFULLY!')</script>");
+                Response.Write("Insrted Successfully!'");
             }
             catch(Exception ex)
             {
-                Response.Write(ex);                
+                Response.Write("Error!" + ex);                
             }
         }
     }

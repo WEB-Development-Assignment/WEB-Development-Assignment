@@ -50,7 +50,7 @@
                     <asp:Label Text="Crop EXD" CssClass="lblEXD" runat="server" />
                     <asp:TextBox runat="server" CssClass="txtEXD" placeholder="    Add EXD" ID="txtEXD" />
 
-                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="https://img.icons8.com/color/48/000000/calendar.png" ImageAlign="AbsBottom" OnClick="ImageButtonEXD_Click" Height="30px" Width="30px"/><br /><br />
+                    <asp:ImageButton ID="ImageButtonEXD" runat="server" ImageUrl="https://img.icons8.com/color/48/000000/calendar.png" ImageAlign="AbsBottom" OnClick="ImageButtonEXD_Click" Height="30px" Width="30px"/><br /><br />
                                         
                     <asp:Calendar Text="MFD" CssClass="CalendarMFD" runat="server" ID="CalendarMFD" OnSelectionChanged="CalendarMFD_SelectionChanged" SelectedDate="12/22/2020 19:44:32" BackColor="White" BorderColor="Black" BorderStyle="Solid" CellSpacing="1" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="175px" NextPrevFormat="ShortMonth" Width="275px">
                         <DayHeaderStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" Height="8pt" />
@@ -76,8 +76,12 @@
                     <asp:Label Text="Location" CssClass="lblLocation" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:TextBox runat="server" CssClass="txtLocation" placeholder="    Select Location" ID="txtLocation" />&nbsp;&nbsp;&nbsp;&nbsp;
 
-                    <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="https://img.icons8.com/color/48/000000/map-marker.png" ImageAlign="AbsBottom" Height="35px" Width="35px"/><br /><br />
-                    
+                    <asp:ImageButton ID="ImageButtonMap" runat="server" ImageUrl="https://img.icons8.com/color/48/000000/map-marker.png" ImageAlign="AbsBottom" Height="35px" Width="35px" OnClick="ImageButtonMap_Click"/><br /><br />
+                                     
+                    <div>
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4047218.2277947073!2d78.46097776275677!3d7.857177846603828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri%20Lanka!5e0!3m2!1sen!2slk!4v1608724939827!5m2!1sen!2slk" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="Map" ></iframe>
+                    </div>
+
                     <br /><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     <asp:Button Text="Submit" CssClass="btnSubmit" runat="server" OnClick="btnSubmit_Click" ID="btnSubmit" Width="300px" />     

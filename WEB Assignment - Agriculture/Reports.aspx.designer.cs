@@ -87,13 +87,13 @@ namespace WEB_Assignment___Agriculture
         protected global::System.Web.UI.WebControls.TextBox txtEXD;
 
         /// <summary>
-        /// ImageButton1 control.
+        /// ImageButtonEXD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButtonEXD;
 
         /// <summary>
         /// CalendarMFD control.
@@ -123,13 +123,13 @@ namespace WEB_Assignment___Agriculture
         protected global::System.Web.UI.WebControls.TextBox txtLocation;
 
         /// <summary>
-        /// ImageButton2 control.
+        /// ImageButtonMap control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton2;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButtonMap;
 
         /// <summary>
         /// btnSubmit control.
