@@ -11,7 +11,7 @@
     <div class ="SignUpBox">
         <img src ="https://img.icons8.com/fluent/48/000000/add-user-male.png" class ="user" alt ="Alternate Text"/>
         <h2>Sign Up</h2>
-        <form runat ="server">
+        <form runat ="server" style="height: 480px; width: 402px">
             <asp:Label Text="Name" CssClass="lblName" runat="server" />
             <asp:TextBox runat="server" CssClass="txtName" placeholder="Enter Name" />
 
@@ -29,6 +29,9 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
             <asp:LinkButton Text="Already Registered? Sign In" CssClass="btnLogin" runat="server" OnClick="Unnamed10_Click" /> 
+
+            <br />
+            <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btnLogin" OnClick="LinkButton2_Click">Sign Up as Keels Or DOA Member</asp:LinkButton>
 
         </form>
     </div>
