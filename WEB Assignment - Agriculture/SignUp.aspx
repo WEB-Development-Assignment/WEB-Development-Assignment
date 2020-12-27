@@ -26,6 +26,12 @@
 
             <asp:Label Text="Address" CssClass="lblAddress" runat="server" />
             <asp:TextBox runat="server" CssClass="txtAddress" placeholder="Enter Address" />
+
+            <asp:Label Text="Password" CssClass="lblPassword" runat="server" />
+            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Enter Password" />
+
+             <asp:Label Text="Re Enter Password" CssClass="lblPassword" runat="server" />
+            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Re Enter Password" />
             &nbsp; 
 
             <br />
@@ -34,10 +40,10 @@
 
             <br />
 
-            <asp:LinkButton Text="Already Registered? Sign In" CssClass="btnLogin" runat="server" OnClick="LinkButton_Click" ID="linklog" /> 
+            <asp:LinkButton Text="Already Registered? Sign In" CssClass="btnLogin" runat="server" ID="linklog" /> 
            
             <br />
-            <asp:LinkButton Text="Sign Up as Keels Or DOA Member" CssClass="btnLogin" runat="server" OnClick="Unnamed10_Click" ID="linkkeels" />
+            <asp:LinkButton Text="Sign Up as Keels Or DOA Member" CssClass="btnLogin" runat="server"  ID="linkkeels" />
             
 
         </form>

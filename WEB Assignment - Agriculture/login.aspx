@@ -18,8 +18,8 @@
 
             
 
-            <asp:Label Text="PassWord" CssClass="lblPassword" runat="server" />
-            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Enter Password" />
+            <asp:Label Text="Password" CssClass="lblPassword" runat="server" />
+            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Enter Password" TextMode="Password"/>
             &nbsp; 
 
             <br />
@@ -28,10 +28,10 @@
 
             <br />
 
-            <asp:LinkButton Text="Not Registered? Sign Up" CssClass="btnLogin" runat="server" OnClick="LinkButton_Click" ID="linklog" /> 
+            <asp:LinkButton Text="Not Registered? Sign Up" CssClass="btnsignup" runat="server" ID="linklog" /> 
            
             <br />
-            <asp:LinkButton Text="Login as Keels Or DOA Member" CssClass="btnLogin" runat="server" OnClick="Unnamed10_Click" ID="linkkeels" />
+            <asp:LinkButton Text="Sign In as Keels Or DOA Member" CssClass="btnsignup" runat="server"  ID="linkkeels" />
             
 
         </form>

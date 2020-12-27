@@ -35,18 +35,18 @@ h2 {
     font-size : 40px;
 }
 
-.lblName, .lblEmail, .lblNIC, .lblFarmName,.lblAddress {
+.lblName, .lblEmail, .lblNIC, .lblFarmName, .lblAddress, .lblPassword {
     font-weight: bold;
     color: black;
     font-size: 15px;
 }
 
-.txtName, .txtEmail, .txtNIC, .txtFarmName,.txtAddress, .btnSubmit {
-    width : 100%;
-    margin-bottom : 20px;
+.txtName, .txtEmail, .txtNIC, .txtFarmName, .txtAddress, .txtPassword, .btnSubmit {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.txtName, .txtEmail, .txtNIC, .txtFarmName,.txtAddress {
+.txtName, .txtEmail, .txtNIC, .txtFarmName,.txtAddress,.txtPassword {
     border: none;
     border-bottom: 3px solid black;
     outline: none;
