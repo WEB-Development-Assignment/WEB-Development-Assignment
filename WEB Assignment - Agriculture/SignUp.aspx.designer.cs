@@ -78,6 +78,24 @@ namespace WEB_Assignment___Agriculture
         protected global::System.Web.UI.WebControls.TextBox txtnic;
 
         /// <summary>
+        /// txtfarmname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtfarmname;
+
+        /// <summary>
+        /// txtaddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtaddress;
+
+        /// <summary>
         /// RequiredFieldValidator3 control.
         /// </summary>
         /// <remarks>
@@ -168,13 +186,22 @@ namespace WEB_Assignment___Agriculture
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator5;
 
         /// <summary>
-        /// long control.
+        /// longi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox @long;
+        protected global::System.Web.UI.WebControls.TextBox longi;
+
+        /// <summary>
+        /// signbtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button signbtn;
 
         /// <summary>
         /// linklog control.

@@ -35,13 +35,13 @@
 
             <asp:Label Text="Farm Name" CssClass="lblFarmName" runat="server" />
             <br />
-            <asp:TextBox runat="server" CssClass="txtFarmName" placeholder="Enter Farm Name" OnTextChanged="Unnamed8_TextChanged" />
+            <asp:TextBox runat="server" CssClass="txtFarmName" placeholder="Enter Farm Name" OnTextChanged="Unnamed8_TextChanged" ID="txtfarmname" />
 
             <br />
 
             <asp:Label Text="Address" CssClass="lblAddress" runat="server" />
             <br />
-            <asp:TextBox runat="server" CssClass="txtAddress" placeholder="Enter Address" />
+            <asp:TextBox runat="server" CssClass="txtAddress" placeholder="Enter Address" ID="txtaddress" />
 
             <br />
 
@@ -69,15 +69,15 @@
             <br />
             
             <asp:Label Text="Longitude" CssClass="lblPassword" runat="server" />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="long" Display="Dynamic" ErrorMessage="RequiredFieldValidator" ForeColor="Red" SetFocusOnError="True">*</asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="long" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ForeColor="Red" ValidationExpression="(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))$">Invalid Data</asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="longi" Display="Dynamic" ErrorMessage="RequiredFieldValidator" ForeColor="Red" SetFocusOnError="True">*</asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="longi" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ForeColor="Red" ValidationExpression="(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))$">Invalid Data</asp:RegularExpressionValidator>
             <br />
-            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Enter longitude" ID="long" />
+            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Enter longitude" ID="longi" />
             &nbsp; 
 
             <br />
 
-            <asp:Button Text="Sign Up" CssClass="btnSubmit" runat="server" />
+            <asp:Button Text="Sign Up" CssClass="btnSubmit" runat="server" ID="signbtn" OnClick="signbtn_Click" />
 
             <br />
 
