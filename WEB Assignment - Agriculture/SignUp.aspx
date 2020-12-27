@@ -11,7 +11,7 @@
     <div class ="SignUpBox">
         <img src ="https://img.icons8.com/fluent/48/000000/add-user-male.png" class ="user" alt ="Alternate Text"/>
         <h2>Sign Up</h2>
-        <form runat ="server" style="height: 480px; width: 402px">
+        <form runat ="server" style="height: 503px; width: 402px">
             <asp:Label Text="Name" CssClass="lblName" runat="server" />
             <asp:TextBox runat="server" CssClass="txtName" placeholder="Enter Name" />
 
@@ -21,12 +21,20 @@
             <asp:Label Text="NIC" CssClass="lblNIC" runat="server" />
             <asp:TextBox runat="server" CssClass="txtNIC" placeholder="Enter NIC" />
 
-            <asp:Label Text="Crop Type" CssClass="lblCropType" runat="server" />
+            <asp:Label Text="Farm Name" CssClass="lblCropType" runat="server" />
             <asp:TextBox runat="server" CssClass="txtCropType" placeholder="Enter Crop Type" />
+
+            <asp:Label ID="Label1" runat="server" CssClass="lblCropType" Text="Address"></asp:Label>
+            <br />
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="txtName"></asp:TextBox>
+            <br />
+            &nbsp; 
+
+            <br />
 
             <asp:Button Text="Sign Up" CssClass="btnSubmit" runat="server" />
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
 
             <asp:LinkButton Text="Already Registered? Sign In" CssClass="btnLogin" runat="server" OnClick="Unnamed10_Click" /> 
 
