@@ -23,5 +23,16 @@ namespace WEB_Assignment___Agriculture
         {
 
         }
+
+        protected void Unnamed8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void LinkButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+    }
     }
 }

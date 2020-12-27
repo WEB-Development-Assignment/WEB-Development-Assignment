@@ -22,7 +22,7 @@
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Account</a></li>
                     <li><a href="Report.aspx">Report</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="login.aspx">Login</a></li>
                     <li><a href="SignUp.aspx">Sign Up</a></li>
                 </ul>
 
