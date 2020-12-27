@@ -33,6 +33,16 @@ namespace WEB_Assignment___Agriculture
         {
             
         }
+
+        protected void txtpass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 }

@@ -8,11 +8,11 @@
 
 .SignUpBox {
     position: absolute;
-    top: 35%;
+    top: 84%;
     left: 56%;
     transform: translate(-50%, -50%);
-    width: 350px;
-    height: 525px;
+    width: 598px;
+    height: 1004px;
     padding: 80px 30px;
     box-sizing: border-box;
     background-color: transparent;
@@ -22,8 +22,8 @@
     width: 100px;
     height: 100px;
     overflow: hidden;
-    top: 45px;
-    left: 15px;
+    top: 339px;
+    left: 571px;
     position : absolute;
 }
 
@@ -42,18 +42,24 @@ h2 {
 }
 
 .txtName, .txtEmail, .txtNIC, .txtFarmName, .txtAddress, .txtPassword, .btnSubmit {
-    width: 100%;
     margin-bottom: 20px;
 }
 
 .txtName, .txtEmail, .txtNIC, .txtFarmName,.txtAddress,.txtPassword {
-    border: none;
     border-bottom: 3px solid black;
     outline: none;
-    height: 40px;
     color: black;
     font-size: 12px;
     background-color: transparent;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: medium;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: medium;
 }
 
 ::placeholder {
