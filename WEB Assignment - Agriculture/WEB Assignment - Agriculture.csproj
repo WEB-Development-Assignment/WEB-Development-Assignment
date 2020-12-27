@@ -137,6 +137,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="login.aspx" />
     <Content Include="Report.aspx" />
+    <Content Include="StyleSheet_SignIn.css" />
     <Content Include="WebForm2.aspx" />
     <None Include="Dockerfile" />
     <None Include=".dockerignore">
