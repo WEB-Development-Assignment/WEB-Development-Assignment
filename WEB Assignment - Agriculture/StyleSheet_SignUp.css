@@ -8,11 +8,11 @@
 
 .SignUpBox {
     position: absolute;
-    top: 27%;
-    left: 41%;
+    top: 84%;
+    left: 56%;
     transform: translate(-50%, -50%);
-    width: 350px;
-    height: 525px;
+    width: 598px;
+    height: 1004px;
     padding: 80px 30px;
     box-sizing: border-box;
     background-color: transparent;
@@ -22,8 +22,8 @@
     width: 100px;
     height: 100px;
     overflow: hidden;
-    top: calc(-100px/2);
-    left: calc(50% - 50px);
+    top: 339px;
+    left: 571px;
     position : absolute;
 }
 
@@ -35,25 +35,31 @@ h2 {
     font-size : 40px;
 }
 
-.lblName, .lblEmail, .lblNIC, .lblCropType {
+.lblName, .lblEmail, .lblNIC, .lblFarmName, .lblAddress, .lblPassword {
     font-weight: bold;
     color: black;
     font-size: 15px;
 }
 
-.txtName, .txtEmail, .txtNIC, .txtCropType, .btnSubmit {
-    width : 100%;
-    margin-bottom : 20px;
+.txtName, .txtEmail, .txtNIC, .txtFarmName, .txtAddress, .txtPassword, .btnSubmit {
+    margin-bottom: 20px;
 }
 
-.txtName, .txtEmail, .txtNIC, .txtCropType {
-    border: none;
+.txtName, .txtEmail, .txtNIC, .txtFarmName,.txtAddress,.txtPassword {
     border-bottom: 3px solid black;
     outline: none;
-    height: 40px;
     color: black;
     font-size: 12px;
     background-color: transparent;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: medium;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: medium;
 }
 
 ::placeholder {
