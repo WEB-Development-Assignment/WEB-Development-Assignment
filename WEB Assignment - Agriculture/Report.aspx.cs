@@ -83,7 +83,7 @@ namespace WEB_Assignment___Agriculture
 
                         //ImageUpload.SaveAs(Server.MapPath("~/Image/") + Path.GetFileName(ImageUpload.FileName));
                         //String link = "Image/" + Path.GetFileName(ImageUpload.FileName);
-                        SqlCommand cmd = new SqlCommand(@"INSERT INTO Reports (F_NIC, F_House_Name, F_Crop_Type, F_Image, F_MFG, F_EXP, F_Location, Latitude, Longitude) VALUES ('" + txtNIC.Text + "' , '" + txtName.Text + "' , '" + txtCropType.Text + "' ,  @image   , '" + txtMFG.Text + "' , '" + txtEXP.Text + "' , '" + "" + "' , '" + txtLatitude.Text + "' , '" + txtLongitude.Text + "')", con);
+                        SqlCommand cmd = new SqlCommand(@"INSERT INTO Reports (F_NIC, F_House_Name, F_Crop_Type, F_Image, F_Crop_MFG, F_Crop_EXP, F_Location, Latitude, Longitude) VALUES ('" + txtNIC.Text + "' , '" + txtName.Text + "' , '" + txtCropType.Text + "' ,  @image   , '" + txtMFG.Text + "' , '" + txtEXP.Text + "' , '" + "" + "' , '" + txtLatitude.Text + "' , '" + txtLongitude.Text + "')", con);
                         cmd.Parameters.AddWithValue("@image", SqlDbType.Image);
                         con.Open();
                         cmd.ExecuteNonQuery();
