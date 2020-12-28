@@ -18,6 +18,7 @@ namespace WEB_Assignment___Agriculture
                 CalendarMFG.Visible = false;
                 CalendarEXP.Visible = false;
                 lblError.Visible = false;
+                lblSuccess.Visible = false;
             }
         }
 
@@ -75,7 +76,7 @@ namespace WEB_Assignment___Agriculture
                     con.Open();
                     cmd.ExecuteNonQuery();
                     con.Close();
-                    Response.Write("Data Insrted Successfully!'");
+                    lblSuccess.Visible = true;
 
                     txtNIC.Text = "";
                     txtName.Text = "";

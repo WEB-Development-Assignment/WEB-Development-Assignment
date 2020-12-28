@@ -220,3 +220,16 @@ D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agricultu
 D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\obj\Debug\WEB Assignment - Agriculture.csproj.CopyComplete
 D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\obj\Debug\WEB Assignment - Agriculture.dll
 D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\obj\Debug\WEB Assignment - Agriculture.pdb
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\MySql.Data.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\Google.Protobuf.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\Zstandard.Net.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\K4os.Compression.LZ4.Streams.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\BouncyCastle.Crypto.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\Ubiety.Dns.Core.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\Renci.SshNet.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\System.Buffers.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\K4os.Compression.LZ4.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\K4os.Hash.xxHash.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\System.Memory.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\MySql.Data.xml
