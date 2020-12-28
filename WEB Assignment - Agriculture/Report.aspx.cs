@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace WEB_Assignment___Agriculture
 {
@@ -18,6 +19,7 @@ namespace WEB_Assignment___Agriculture
                 CalendarMFG.Visible = false;
                 CalendarEXP.Visible = false;
                 lblError.Visible = false;
+                lblSuccess.Visible = false;
             }
         }
 
@@ -62,7 +64,7 @@ namespace WEB_Assignment___Agriculture
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (txtNIC.Text == "" || txtName.Text == "" || txtContactNo.Text == "" || txtCropType.Text == "" || txtMFG.Text == "" || txtEXP.Text == "")
+            if (txtNIC.Text == "" || txtName.Text == "" || txtCropType.Text == "" || txtMFG.Text == "" || txtEXP.Text == "")
             {
                 lblError.Visible = true;
             }
@@ -70,20 +72,31 @@ namespace WEB_Assignment___Agriculture
             {
                 try
                 {
-                    SqlConnection con = new SqlConnection("Data Source=DESKTOP-VHPDJKD;Initial Catalog=DoA;Integrated Security=True");
-                    SqlCommand cmd = new SqlCommand(@"INSERT INTO Reports (F_NIC, F_Name, F_Contact_No, F_Crop_Type, F_MFG, F_EXP, F_Location) VALUES ('" + txtNIC.Text + "' , '" + txtName.Text + "' , '" + txtContactNo.Text + "' , '" + txtCropType.Text + "' , '" + txtMFG.Text + "' , '" + txtEXP.Text + "' , '" + "" + "')", con);
-                    con.Open();
-                    cmd.ExecuteNonQuery();
-                    con.Close();
-                    Response.Write("Data Insrted Successfully!'");
+                    if (ImageUpload.PostedFile.FileName != "")
+                    {
+                        byte[] image;
+                        Stream s = ImageUpload.PostedFile.InputStream;
+                        BinaryReader br = new BinaryReader(s);
+                        image = br.ReadBytes((Int32)s.Length);
 
-                    txtNIC.Text = "";
-                    txtName.Text = "";
-                    txtContactNo.Text = "";
-                    txtCropType.Text = "";
-                    txtMFG.Text = "";
-                    txtEXP.Text = "";
-                }
+                        SqlConnection con = new SqlConnection("Data Source=DESKTOP-VHPDJKD;Initial Catalog=DoA;Integrated Security=True");
+
+                        //ImageUpload.SaveAs(Server.MapPath("~/Image/") + Path.GetFileName(ImageUpload.FileName));
+                        //String link = "Image/" + Path.GetFileName(ImageUpload.FileName);
+                        SqlCommand cmd = new SqlCommand(@"INSERT INTO Reports (F_NIC, F_House_Name, F_Crop_Type, F_Image, F_MFG, F_EXP, F_Location, Latitude, Longitude) VALUES ('" + txtNIC.Text + "' , '" + txtName.Text + "' , '" + txtCropType.Text + "' ,  @image   , '" + txtMFG.Text + "' , '" + txtEXP.Text + "' , '" + "" + "' , '" + txtLatitude.Text + "' , '" + txtLongitude.Text + "')", con);
+                        cmd.Parameters.AddWithValue("@image", SqlDbType.Image);
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        lblSuccess.Visible = true;
+
+                        txtNIC.Text = "";
+                        txtName.Text = "";
+                        txtCropType.Text = "";
+                        txtMFG.Text = "";
+                        txtEXP.Text = "";
+                    }
+                }                    
                 catch (Exception ex)
                 {
                     Response.Write("Error!" + ex);

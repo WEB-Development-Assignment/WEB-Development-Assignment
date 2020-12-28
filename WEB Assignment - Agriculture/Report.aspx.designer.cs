@@ -24,6 +24,15 @@ namespace WEB_Assignment___Agriculture
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// lblSuccess control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSuccess;
+
+        /// <summary>
         /// lblError control.
         /// </summary>
         /// <remarks>
@@ -51,15 +60,6 @@ namespace WEB_Assignment___Agriculture
         protected global::System.Web.UI.WebControls.TextBox txtName;
 
         /// <summary>
-        /// txtContactNo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtContactNo;
-
-        /// <summary>
         /// txtCropType control.
         /// </summary>
         /// <remarks>
@@ -67,6 +67,15 @@ namespace WEB_Assignment___Agriculture
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCropType;
+
+        /// <summary>
+        /// ImageUpload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload ImageUpload;
 
         /// <summary>
         /// txtMFG control.
@@ -121,6 +130,24 @@ namespace WEB_Assignment___Agriculture
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar CalendarEXP;
+
+        /// <summary>
+        /// txtLatitude control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLatitude;
+
+        /// <summary>
+        /// txtLongitude control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLongitude;
 
         /// <summary>
         /// btnSubmit control.
