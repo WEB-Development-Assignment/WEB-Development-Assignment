@@ -6,7 +6,7 @@
 <head runat="server">
     <title> Set Location On Google Map</title>
 
-	<script src="https://maps.googleapis.com/maps?file=api&amp;y=2&amp;sensor=true;key=AIzaSyDhnTaFdT1yTbnu8nByBOnPmiRnLm2xqVY=myMap"></script> 
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9kJ-z44cnQ3QJHff1sQTlbnEYH-plu48&callback&sensor=true"></script> 
 	<!--<script src="https://maps.googleapis.com/maps/api/directions/json?origin=Toronto&destination=Montreal&key=AIzaSyBXG4iVL9MYSkAZNdkc7Cy5-TrYu8rkuag"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhnTaFdT1yTbnu8nByBOnPmiRnLm2xqVY&sensor=true"></script>-->
 	<script type="text/javascript">

@@ -7,6 +7,7 @@
     <title></title>
     <script type="text/javascript">
 	
+
 	function load() {
 		if(GBrowserIsCompatible()) {
 			var map = new Gmap2(document.getElementById("map"));
@@ -145,5 +146,7 @@
 
         </div>
     </form>
+
+
 </body>
 </html>

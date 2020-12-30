@@ -72,18 +72,18 @@ h2 {
     font-weight: bold;
 }
 
-.lblNIC, .lblName, .lblImage, .lblNIC, .lblCropType, .lblMFG, .lblEXP, .lblLocation {
+.lblNIC, .lblName, .lblImage, .lblNIC, .lblCropType, .lblMFG, .lblEXP, .lblLocation, .lblAddress {
     font-weight: bold;
     color: black;
     font-size: 18px;
 }
 
-.txtNIC, .txtName, .ImageUpload, .txtCropType, .txtMFG, .txtEXP, .txtLocation, .btnSubmit {
+.txtNIC, .txtName, .ImageUpload, .txtCropType, .txtMFG, .txtEXP, .txtLocation, .txtAddress, .btnSubmit {
     width: 30%;
     margin-bottom: -20px;
 }
 
-.txtNIC, .txtName, .txtCropType, .txtMFG, .txtEXP, .txtLocation {
+.txtNIC, .txtName, .txtCropType, .txtMFG, .txtEXP, .txtLocation, .txtAddress {
     border: none;
     border-bottom: 3px solid black;
     outline: none;
