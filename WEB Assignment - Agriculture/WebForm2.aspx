@@ -5,9 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title> Set Location On Google Map</title>
-
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9kJ-z44cnQ3QJHff1sQTlbnEYH-plu48&callback&sensor=true"></script> 
-	<!--<script src="https://maps.googleapis.com/maps/api/directions/json?origin=Toronto&destination=Montreal&key=AIzaSyBXG4iVL9MYSkAZNdkc7Cy5-TrYu8rkuag"></script>
+    <asp:Button runat="server" Text="Button" />
+	<script src="https://maps.google.com/maps?file=api&amp;v=2&amp:sensor=true&amp;key=AIzaSyA9kJ-z44cnQ3QJHff1sQTlbnEYH-plu48&callback&sensor=true"></script>
+	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9kJ-z44cnQ3QJHff1sQTlbnEYH-plu48&callback&sensor=true"></script> 
+	<script src="https://maps.googleapis.com/maps/api/directions/json?origin=Toronto&destination=Montreal&key=AIzaSyBXG4iVL9MYSkAZNdkc7Cy5-TrYu8rkuag"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhnTaFdT1yTbnu8nByBOnPmiRnLm2xqVY&sensor=true"></script>-->
 	<script type="text/javascript">
 	
@@ -131,6 +132,10 @@
 
 			<asp:TextBox runat="server" id="lat" name="latitude"></asp:TextBox>
 			<asp:TextBox runat="server" id="lng" name="longitude"></asp:TextBox>
+			<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+            <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1">
+            </asp:GridView>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:doaConnectionString %>" ProviderName="<%$ ConnectionStrings:doaConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [reports]"></asp:SqlDataSource>
 			<div align="center" id="map" style="width: 600px; height: 400px"></div>
 
         </div>

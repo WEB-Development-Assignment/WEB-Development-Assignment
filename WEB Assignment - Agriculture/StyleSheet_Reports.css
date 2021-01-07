@@ -45,8 +45,8 @@
     top: 135%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 1050px;
+    width: 900px;
+    height: 1100px;
     padding: 80px 30px;
     box-sizing: border-box;
     background-color: white;
@@ -78,12 +78,12 @@ h2 {
     font-size: 18px;
 }
 
-.txtNIC, .txtName, .ImageUpload, .txtCropType, .txtMFG, .txtEXP, .txtLocation, .txtAddress, .btnSubmit {
+.txtNIC, .txtName, .ImageUpload, .txtCropType, .txtMFG, .txtEXP, .txtLocation, .btnSubmit {
     width: 30%;
     margin-bottom: -20px;
 }
 
-.txtNIC, .txtName, .txtCropType, .txtMFG, .txtEXP, .txtLocation, .txtAddress {
+.txtNIC, .txtName, .txtCropType, .txtMFG, .txtEXP, .txtLocation {
     border: none;
     border-bottom: 3px solid black;
     outline: none;

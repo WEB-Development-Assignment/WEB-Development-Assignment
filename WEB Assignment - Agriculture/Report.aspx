@@ -52,7 +52,7 @@
                     <asp:TextBox runat="server" CssClass="txtCropType" placeholder="    Enter Crop Type" ID="txtCropType" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     <asp:Label Text="Image" CssClass="lblImage" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:FileUpload ID="ImageUpload" runat="server" CssClass="ImageUpload"/><br /><br /><br />
+                    <asp:FileUpload ID="ImageUpload" runat="server" CssClass="ImageUpload" OnClick="ImageUpload_Click"/><br /><br /><br />
 
                     
                     <asp:Label Text="Crop MFG" CssClass="lblMFG" runat="server" />
@@ -86,24 +86,106 @@
                     </asp:Calendar>
 
                     <br /><br />
-                    <asp:Label Text="Location" CssClass="lblLocation" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label Text="Location" CssClass="lblLocation" runat="server" />
+                    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                    <asp:Label Text="Address" CssClass="lblAddress" runat="server" />&nbsp;
-                    <asp:TextBox runat="server" CssClass="txtAddress" placeholder="    Enter Farm House Address" ID="txtAddress" />
-                    <!--
-                    <div>
-                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.58585962832!2d79.78616421291655!3d6.922003946726586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2ssg!4v1608740008392!5m2!1sen!2ssg" width="790" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="Map" ></iframe>
-                    </div>-->
+                    <div id="Map"> 
+                        <!DOCTYPE html>
+                            <html>
+                                <head>
+	                                <title>Map</title>
+	                                <style>
+                                        #myMap {
+                                            height: 450px;
+                                            width: 810px;
+                                            left: 2%;
+                                        }
+                                    </style>
+                                    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed in=true&libraries=places"></script>
+                                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                                    <script type="text/javascript"> 
+                                        var map;
+                                        var marker;
+                                        var myLatlng = new google.maps.LatLng(20.268455824834792,85.84099235520011);
+                                        var geocoder = new google.maps.Geocoder();
+                                        var infowindow = new google.maps.InfoWindow();
+                                        function initialize()
+                                        {
+                                            var mapOptions =
+                                            {
+                                                zoom: 18,
+                                                center: myLatlng,
+                                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                                            };
+
+                                            map = new google.maps.Map(document.getElementById("myMap"), mapOptions);
+
+                                            marker = new google.maps.Marker(
+                                                {
+                                                map: map,
+                                                position: myLatlng,
+                                                draggable: true 
+                                                }); 
+
+                                            geocoder.geocode({ 'latLng': myLatlng }, function (results, status)
+                                            {
+                                                if (status == google.maps.GeocoderStatus.OK)
+                                                {
+                                                    if (results[0])
+                                                    {
+                                                        $('#latitude,#longitude').show();
+                                                        $('#address').val(results[0].formatted_address);
+                                                        $('#latitude').val(marker.getPosition().lat());
+                                                        $('#longitude').val(marker.getPosition().lng());
+                                                        infowindow.setContent(results[0].formatted_address);
+                                                        infowindow.open(map, marker);
+                                                    }
+                                                }
+                                            });
+
+                                            google.maps.event.addListener(marker, 'dragend', function ()
+                                            {
+                                                geocoder.geocode({ 'latLng': marker.getPosition() }, function (results, status)
+                                                {
+                                                    if (status == google.maps.GeocoderStatus.OK)
+                                                    {
+                                                        if (results[0])
+                                                        {
+                                                            $('#address').val(results[0].formatted_address);
+                                                            $('#latitude').val(marker.getPosition().lat());
+                                                            $('#longitude').val(marker.getPosition().lng());
+                                                            infowindow.setContent(results[0].formatted_address);
+                                                            infowindow.open(map, marker);
+                                                        }
+                                                    }
+                                                });
+                                            });
+                                        }
+
+                                        google.maps.event.addDomListener(window, 'load', initialize);
+                                    </script>
+
+                                </head>
+                                <body>
+                                    <div id="myMap"></div><br />
+
+                                    <asp:Label Text="Address" CssClass="lblAddress" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                    <input id="address" type="text" style="width:600px; margin-bottom: -20px; border: none; border-bottom: 3px solid black; outline: none; height: 40px; color: black; font-size: 12px; background-color: transparent; " placeholder="      Farm Address" /><br /> 
+                                    
+                                    <br />
+                                    <input type="text" id="latitude" placeholder="Latitude"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <input type="text" id="longitude" placeholder="Longitude"/>
+                                </body>
+                            </html>
+
+                        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.58585962832!2d79.78616421291655!3d6.922003946726586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2ssg!4v1608740008392!5m2!1sen!2ssg" width="790" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="Map" ></iframe>
+                    --></div>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     
-                    <asp:TextBox runat="server" CssClass="txtLatitude" ID="txtLatitude" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    
-                    <asp:TextBox runat="server" CssClass="txtLongitude" ID="txtLongitude" />
-
-                    <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     <asp:Button Text="Submit" CssClass="btnSubmit" runat="server" OnClick="btnSubmit_Click" ID="btnSubmit" Width="300px" />     
                     
