@@ -60,8 +60,8 @@ namespace WEB_Assignment___Agriculture
                 try
                 {
                    
-                    SqlConnection con = new SqlConnection("Data Source=LAPTOP-3BH9AN2N;Initial Catalog=DoA;Integrated Security=True");
-                    SqlCommand cmd = new SqlCommand(@"INSERT INTO Farmer (nic, Name,email,farmname,address,password, latitude,longitude) VALUES ('" + txtnic.Text + "' , '" + txtname.Text + "' , '" + txtmail.Text + "' , '" + txtfarmname.Text + "' , '" + txtaddress.Text + "' , '" + txtpass.Text + "' ,  '" + lati.Text + "' , '" + longi.Text + "' ,)", con);
+                    SqlConnection con = new SqlConnection("server=127.0.0.1;user id=root;database=doa");
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Farmer (nic, Name,email,farmname,address,password, latitude,longitude) VALUES ('" + txtnic.Text + "' , '" + txtname.Text + "' , '" + txtmail.Text + "' , '" + txtfarmname.Text + "' , '" + txtaddress.Text + "' , '" + txtpass.Text + "' ,  '" + lati.Text + "' , '" + longi.Text + "' ,)", con);
                     con.Open();
                     cmd.ExecuteNonQuery();
                     con.Close();
