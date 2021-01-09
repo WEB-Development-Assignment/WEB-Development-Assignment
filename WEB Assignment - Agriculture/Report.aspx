@@ -133,7 +133,7 @@
 
                     <label for="longitude">Longitude:</label>
                     <asp:TextBox runat="server" CssClass="txtLng" value="79.857750" ID="txtLng" />
-                    <br />
+                    <br /><br />
                     <div id="map_canvas" style="width: auto; height: 400px;">
                     </div>
 
