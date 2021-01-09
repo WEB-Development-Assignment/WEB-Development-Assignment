@@ -132,6 +132,24 @@ namespace WEB_Assignment___Agriculture
         protected global::System.Web.UI.WebControls.Calendar CalendarEXP;
 
         /// <summary>
+        /// txtLat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLat;
+
+        /// <summary>
+        /// txtLng control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLng;
+
+        /// <summary>
         /// btnSubmit control.
         /// </summary>
         /// <remarks>

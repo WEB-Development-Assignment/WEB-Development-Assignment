@@ -6,8 +6,47 @@
 <head runat="server">
     <title>Report Page</title>
     <link href="StyleSheet_Reports.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCuOXS1TgOF-g9OXZJOw3pfNQp7TA-Jw4&callback=farmerMap"></script>
+
+    <script type="text/javascript">
+        function initialize() {
+            // Creating map object
+            var map = new google.maps.Map(document.getElementById('map_canvas'), {
+                zoom: 12,
+                center: new google.maps.LatLng(6.931970, 79.857750),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+            // creates a draggable marker to the given coords
+            var vMarker = new google.maps.Marker({
+                position: new google.maps.LatLng(6.931970, 79.857750),
+                draggable: true
+            });
+
+            // adds a listener to the marker
+            // gets the coords when drag event ends
+            // then updates the input with the new coords
+            google.maps.event.addListener(vMarker, 'dragend', function (evt) {
+                $("#txtLat").val(evt.latLng.lat().toFixed(6));
+                $("#txtLng").val(evt.latLng.lng().toFixed(6));
+
+                map.panTo(evt.latLng);
+            });
+
+            // centers the map on markers coords
+            map.setCenter(vMarker.position);
+
+            // adds the marker on the map
+            vMarker.setMap(map);
+        }
+    </script>
 </head>
-<body>
+
+
+<body onload="initialize();">
     <form id="form1" runat="server">
         <div id="wrapper">
 
@@ -87,165 +126,16 @@
 
                     <br /><br />
                     <asp:Label Text="Location" CssClass="lblLocation" runat="server" />
-                    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    
+                    <label for="latitude">Latitude:</label>
+                    <asp:TextBox runat="server" CssClass="txtLat" value="6.931970" ID="txtLat" />&nbsp;
 
-                    <div id="Map"> 
-                        <!DOCTYPE html>
-                            <html>
-                                <head>
-	                                <title>Map</title>
-	                                <style>
-                                        #myMap {
-                                            height: 450px;
-                                            width: 810px;
-                                            left: 2%;
-                                        }
-                                    </style>
-                                    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed in=true&libraries=places"></script>
-                                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-                                    <script type="text/javascript"> 
-                                        var map;
-                                        var marker;
-                                        var myLatlng = new google.maps.LatLng(20.268455824834792,85.84099235520011);
-                                        var geocoder = new google.maps.Geocoder();
-                                        var infowindow = new google.maps.InfoWindow();
-                                        function initialize()
-                                        {
-                                            var mapOptions =
-                                            {
-                                                zoom: 18,
-                                                center: myLatlng,
-                                                mapTypeId: google.maps.MapTypeId.ROADMAP
-                                            };
-
-                                            map = new google.maps.Map(document.getElementById("myMap"), mapOptions);
-
-                                            marker = new google.maps.Marker(
-                                                {
-                                                map: map,
-                                                position: myLatlng,
-                                                draggable: true 
-                                                }); 
-
-                                            geocoder.geocode({ 'latLng': myLatlng }, function (results, status)
-                                            {
-                                                if (status == google.maps.GeocoderStatus.OK)
-                                                {
-                                                    if (results[0])
-                                                    {
-                                                        $('#latitude,#longitude').show();
-                                                        $('#address').val(results[0].formatted_address);
-                                                        $('#latitude').val(marker.getPosition().lat());
-                                                        $('#longitude').val(marker.getPosition().lng());
-                                                        infowindow.setContent(results[0].formatted_address);
-                                                        infowindow.open(map, marker);
-                                                    }
-                                                }
-                                            });
-
-                                            google.maps.event.addListener(marker, 'dragend', function ()
-                                            {
-                                                geocoder.geocode({ 'latLng': marker.getPosition() }, function (results, status)
-                                                {
-                                                    if (status == google.maps.GeocoderStatus.OK)
-                                                    {
-                                                        if (results[0])
-                                                        {
-                                                            $('#address').val(results[0].formatted_address);
-                                                            $('#latitude').val(marker.getPosition().lat());
-                                                            $('#longitude').val(marker.getPosition().lng());
-                                                            infowindow.setContent(results[0].formatted_address);
-                                                            infowindow.open(map, marker);
-                                                        }
-                                                    }
-                                                });
-                                            });
-                                        }
-
-                                        google.maps.event.addDomListener(window, 'load', initialize);
-                                    </script>
-
-                                </head>
-                                <body>
-                                    <div id="myMap"></div><br />
-
-                                    <asp:Label Text="Address" CssClass="lblAddress" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                                    <input id="address" type="text" style="width:600px; margin-bottom: -20px; border: none; border-bottom: 3px solid black; outline: none; height: 40px; color: black; font-size: 12px; background-color: transparent; " placeholder="      Farm Address" /><br /> 
-                                    
-                                    <br />
-                                    <input type="text" id="latitude" placeholder="Latitude"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    
-                                    <input type="text" id="longitude" placeholder="Longitude"/>
-                                </body>
-                            </html>
-
-                     <!--   <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8" />
-<title>Create a draggable Marker</title>
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />
-<style>
-	body { margin: 0; padding: 0; }
-	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
-</style>
-</head>
-<body>
-<style>
-    .coordinates {
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        position: absolute;
-        bottom: 40px;
-        left: 10px;
-        padding: 5px 10px;
-        margin: 0;
-        font-size: 11px;
-        line-height: 18px;
-        border-radius: 3px;
-        display: none;
-    }
-</style>
-
-<div id="map"></div>
-<pre id="coordinates" class="coordinates"></pre>
-
-<script>
-    // TO MAKE THE MAP APPEAR YOU MUST
-    // ADD YOUR ACCESS TOKEN FROM
-    // https://account.mapbox.com
-    mapboxgl.accessToken = '<your access token here>';
-    var coordinates = document.getElementById('coordinates');
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [0, 0],
-        zoom: 2
-    });
-
-    var marker = new mapboxgl.Marker({
-        draggable: true
-    })
-        .setLngLat([0, 0])
-        .addTo(map);
-
-    function onDragEnd() {
-        var lngLat = marker.getLngLat();
-        coordinates.style.display = 'block';
-        coordinates.innerHTML =
-            'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
-    }
-
-    marker.on('dragend', onDragEnd);
-</script>
-
-</body>
-</html>-->
-
-                        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.58585962832!2d79.78616421291655!3d6.922003946726586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2ssg!4v1608740008392!5m2!1sen!2ssg" width="790" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="Map" ></iframe>
-                    --></div>
+                    <label for="longitude">Longitude:</label>
+                    <asp:TextBox runat="server" CssClass="txtLng" value="79.857750" ID="txtLng" />
+                    <br />
+                    <div id="map_canvas" style="width: auto; height: 400px;">
+                    </div>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

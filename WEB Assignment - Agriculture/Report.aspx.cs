@@ -97,7 +97,7 @@ namespace WEB_Assignment___Agriculture
 
                     MySqlConnection con = new MySqlConnection("server=127.0.0.1;user id=root;database=doa");
                     con.Open();
-                    MySqlCommand cmd = new MySqlCommand(@"INSERT INTO reports (F_NIC, F_House_Name, F_Crop_Type, F_Image, F_Crop_MFG, F_Crop_EXP, F_Address, Latitude, Longitude) VALUES ('" + txtNIC.Text + "' , '" + txtName.Text + "' , '" + txtCropType.Text + "' ,  @imgpath  , '" + txtMFG.Text + "' , '" + txtEXP.Text + "' , '" + "" + "' , '" + "" + "' , '" + "" + "')", con);
+                    MySqlCommand cmd = new MySqlCommand(@"INSERT INTO reports (F_NIC, F_House_Name, F_Crop_Type, F_Image, F_Crop_MFG, F_Crop_EXP, F_Address, Latitude, Longitude) VALUES ('" + txtNIC.Text + "' , '" + txtName.Text + "' , '" + txtCropType.Text + "' ,  @imgpath  , '" + txtMFG.Text + "' , '" + txtEXP.Text + "' , '" + "" + "' , '" + txtLat.Text + "' , '" + txtLng.Text + "')", con);
                     cmd.Parameters.AddWithValue("@imgpath", bytes);
                     cmd.Parameters.AddWithValue("", imgtype);
                     cmd.ExecuteNonQuery();
