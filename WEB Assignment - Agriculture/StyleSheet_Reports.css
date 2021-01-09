@@ -46,7 +46,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 900px;
-    height: 900px;
+    height: 1050px;
     padding: 80px 30px;
     box-sizing: border-box;
     background-color: white;
@@ -94,11 +94,13 @@ h2 {
 }
 
 .CalendarMFG {
-    left: 12.9%;
+    left: 12.5%;
+    position:absolute;
 }
 
 .CalendarEXP {
-    left: 63%;
+    left: 59%;
+    position: absolute;
 }
 
 ::placeholder {

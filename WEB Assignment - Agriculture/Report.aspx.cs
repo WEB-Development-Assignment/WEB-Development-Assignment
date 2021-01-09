@@ -25,32 +25,6 @@ namespace WEB_Assignment___Agriculture
             }
         }
 
-        protected void ImageButtonMFG_Click(object sender, ImageClickEventArgs e)
-        {
-            if(CalendarMFG.Visible)
-            {
-                CalendarMFG.Visible = false;
-            }
-            else
-            {
-                CalendarMFG.Visible = true;
-            }
-            CalendarMFG.Attributes.Add("style", "position:absolute");
-        }
-
-        protected void ImageButtonEXP_Click(object sender, ImageClickEventArgs e)
-        {
-            if (CalendarEXP.Visible)
-            {
-                CalendarEXP.Visible = false;
-            }
-            else
-            {
-                CalendarEXP.Visible = true;
-            }
-            CalendarEXP.Attributes.Add("style", "position:absolute");
-        }
-
         protected void CalendarEXP_SelectionChanged(object sender, EventArgs e)
         {
             txtEXP.Text = CalendarEXP.SelectedDate.ToString("dd/MM/yyyy");
@@ -98,6 +72,33 @@ namespace WEB_Assignment___Agriculture
                     Response.Write("Error!" + ex);
                 }
             }
+        }
+
+        protected void ImageButtonMFG_Click(object sender, ImageClickEventArgs e)
+        {
+            if (CalendarMFG.Visible)
+            {
+                CalendarMFG.Visible = false;
+            }
+            else
+            {
+                CalendarMFG.Visible = true;
+                
+            }
+            CalendarMFG.Attributes.Add("style", "position:absolute");
+        }
+
+        protected void ImageButtonEXP_Click(object sender, ImageClickEventArgs e)
+        {
+            if (CalendarEXP.Visible)
+            {
+                CalendarEXP.Visible = false;
+            }
+            else
+            {
+                CalendarEXP.Visible = true;
+            }
+            CalendarEXP.Attributes.Add("style", "position:absolute");
         }
     }
 }
