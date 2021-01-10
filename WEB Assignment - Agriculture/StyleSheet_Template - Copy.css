@@ -1,14 +1,33 @@
-﻿
+﻿/* Default Template Styles */
+
+/* Typography */
+body {
+    background: #fff;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: #777;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+
 .ReportBox {
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 900px;
     height: 1050px;
     padding: 80px 30px;
     box-sizing: border-box;
-    background-color: limegreen;
+    background-color: coral;
 }
 
 .lblError, .lblSuccess {
@@ -46,7 +65,7 @@
 
 .CalendarMFG {
     left: 12.5%;
-    position:absolute;
+    position: absolute;
 }
 
 .CalendarEXP {
@@ -73,9 +92,9 @@
     text-align: center;
 }
 
-.btnSubmit:hover {
-     background-color: #4cff00;
-}
+    .btnSubmit:hover {
+        background-color: #4cff00;
+    }
 
 #footer {
     clear: both;

@@ -5,8 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Report Page</title>
-    <link href="StyleSheet_Reports.css" rel="stylesheet" />
     <link href="StyleSheet_Nav.css" rel="stylesheet" />
+    
+    <link href="StyleSheet_Template - Copy.css" rel="stylesheet" />
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"></script>
     <script type="text/javascript" 
@@ -91,7 +92,7 @@
 	    </nav>
 
                 <div class="ReportBox">
-                <h2>REPORT</h2><br />
+                <h1>REPORT</h1><br />
 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -175,12 +176,12 @@
                     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
+        <!--
                 <div id="footer">
                     <p><br />@All right reserved 2020</p>
                 </div>
 
-            </div>
+            </div>-->
     </form>
 </body>
 </html>

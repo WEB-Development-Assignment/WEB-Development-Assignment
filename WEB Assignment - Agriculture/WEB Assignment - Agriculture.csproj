@@ -141,6 +141,7 @@
     <Content Include="StyleSheet_AboutUs.css" />
     <Content Include="StyleSheet_Nav.css" />
     <Content Include="Report.aspx" />
+    <Content Include="StyleSheet_Template - Copy.css" />
     <Content Include="StyleSheet_Template.css" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
