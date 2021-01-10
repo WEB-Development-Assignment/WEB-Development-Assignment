@@ -83,7 +83,7 @@ namespace WEB_Assignment___Agriculture
 
         protected void linklog_Click(object sender, EventArgs e)
         {
-           
+            Response.Redirect("login.aspx");
         }
     }
 }
