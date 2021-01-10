@@ -5,9 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Report Page</title>
-    <link href="StyleSheet_Nav.css" rel="stylesheet" />
-    
-    <link href="StyleSheet_Template - Copy.css" rel="stylesheet" />
+
+    <link href="StyleSheet_Nav.css" rel="stylesheet" />    
+    <link href="StyleSheet_Reports.css" rel="stylesheet" />
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"></script>
     <script type="text/javascript" 
@@ -49,7 +49,7 @@
         .auto-style2 {
             left: 13%;
             position: absolute;
-            top: 332px;
+            top: 358px;
             height: 98px;
             width: 260px;
             margin-right: 0px;
@@ -57,9 +57,9 @@
         .auto-style3 {
             left: 62%;
             position: absolute;
-            top: 333px;
+            top: 357px;
             height: 104px;
-            right: 105px;
+            right: 100px;
             width: 260px;
         }
     </style>
