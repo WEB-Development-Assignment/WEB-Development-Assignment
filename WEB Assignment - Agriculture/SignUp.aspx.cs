@@ -63,6 +63,7 @@ namespace WEB_Assignment___Agriculture
                     cmd.ExecuteNonQuery();
                     con.Close();
                     Response.Write("Registerd Successfully!'");
+                Response.Redirect("login.aspx");
 
                     txtnic.Text = "";
                     txtname.Text = "";
@@ -78,6 +79,11 @@ namespace WEB_Assignment___Agriculture
                     Response.Write("Error!" + ex);
                 }
             
+        }
+
+        protected void linklog_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

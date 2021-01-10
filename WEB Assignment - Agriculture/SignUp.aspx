@@ -66,7 +66,7 @@
 
             <br />
 
-            <asp:LinkButton Text="Already Registered? Sign In" CssClass="btnLogin" runat="server" ID="linklog" /> 
+            <asp:LinkButton Text="Already Registered? Sign In" CssClass="btnLogin" runat="server" ID="linklog" OnClick="linklog_Click" /> 
            
             <br />
             <asp:LinkButton Text="Sign Up as Keels Or DOA Member" CssClass="btnLogin" runat="server"  ID="linkkeels" />
