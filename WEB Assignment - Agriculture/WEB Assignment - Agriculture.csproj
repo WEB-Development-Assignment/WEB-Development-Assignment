@@ -110,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AboutUs.aspx" />
     <Content Include="App_Data\Agri.mdf" />
     <Content Include="App_Data\Agri_log.ldf">
       <DependentUpon>Agri.mdf</DependentUpon>
@@ -137,7 +138,10 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Map.aspx" />
+    <Content Include="StyleSheet_AboutUs.css" />
+    <Content Include="StyleSheet_Nav.css" />
     <Content Include="Report.aspx" />
+    <Content Include="StyleSheet_Template.css" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
     <None Include="Dockerfile" />
@@ -185,6 +189,13 @@
     <Content Include="Site1.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
