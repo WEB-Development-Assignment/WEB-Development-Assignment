@@ -48,7 +48,7 @@
             <asp:Label Text="Password" CssClass="lblPassword" runat="server" />
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtpass" Display="Dynamic" ErrorMessage="RequiredFieldValidator" ForeColor="Red" SetFocusOnError="True">*</asp:RequiredFieldValidator>
             <br />
-            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Enter Password" ID="txtpass" />
+            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Enter Password" ID="txtpass" TextMode="Password" />
 
              <br />
 
@@ -56,24 +56,9 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtrepass" Display="Dynamic" ErrorMessage="RequiredFieldValidator" ForeColor="Red" SetFocusOnError="True">*</asp:RequiredFieldValidator>
             <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtpass" ControlToValidate="txtrepass" Display="Dynamic" ErrorMessage="CompareValidator" ForeColor="Red" SetFocusOnError="True">Password Does not match</asp:CompareValidator>
             <br />
-            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Re Enter Password" ID="txtrepass" />
+            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Re Enter Password" ID="txtrepass" TextMode="Password" />
          
             <br />
-         
-            <asp:Label Text="Latitude " CssClass="lblPassword" runat="server" />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="lati" Display="Dynamic" ErrorMessage="RequiredFieldValidator" ForeColor="Red" SetFocusOnError="True">*</asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="lati" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ForeColor="Red" SetFocusOnError="True" ValidationExpression="(\+|-)?(?:90(?:(?:\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\.[0-9]{1,6})?))$">Invalid Data</asp:RegularExpressionValidator>
-            <br />
-            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Enter latitude" ID="lati" />
-            
-            <br />
-            
-            <asp:Label Text="Longitude" CssClass="lblPassword" runat="server" />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="longi" Display="Dynamic" ErrorMessage="RequiredFieldValidator" ForeColor="Red" SetFocusOnError="True">*</asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="longi" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ForeColor="Red" ValidationExpression="(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))$">Invalid Data</asp:RegularExpressionValidator>
-            <br />
-            <asp:TextBox runat="server" CssClass="txtPassword" placeholder="Enter longitude" ID="longi" />
-            &nbsp; 
 
             <br />
 

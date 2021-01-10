@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
-
+using MySql.Data.MySqlClient;
 
 namespace WEB_Assignment___Agriculture
 {
@@ -51,18 +51,15 @@ namespace WEB_Assignment___Agriculture
 
         protected void signbtn_Click(object sender, EventArgs e)
         {
-            if (txtname.Text == "" || txtnic.Text == "" || txtpass.Text == "" || lati.Text == "" || longi.Text == "")
-            {
-                
-            }
-            else
-            {
+            
                 try
                 {
-                   
-                    SqlConnection con = new SqlConnection("server=127.0.0.1;user id=root;database=doa");
-                    SqlCommand cmd = new SqlCommand("INSERT INTO Farmer (nic, Name,email,farmname,address,password, latitude,longitude) VALUES ('" + txtnic.Text + "' , '" + txtname.Text + "' , '" + txtmail.Text + "' , '" + txtfarmname.Text + "' , '" + txtaddress.Text + "' , '" + txtpass.Text + "' ,  '" + lati.Text + "' , '" + longi.Text + "' ,)", con);
-                    con.Open();
+                MySqlConnection con = new MySqlConnection("server=127.0.0.1;user id=root;database=doa");
+           
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand(@"INSERT INTO Farmer (nic, Name,email,farmname,address,password) VALUES ('" + txtnic.Text + "' , '" + txtname.Text + "' , '" + txtmail.Text + "' , '" + txtfarmname.Text + "' , '" + txtaddress.Text + "' , '" + txtpass.Text + "')", con);
+               
+                    
                     cmd.ExecuteNonQuery();
                     con.Close();
                     Response.Write("Registerd Successfully!'");
@@ -73,15 +70,14 @@ namespace WEB_Assignment___Agriculture
                     txtfarmname.Text = "";
                     txtaddress.Text = "";
                     txtpass.Text = "";
-                    lati.Text = "";
-                    longi.Text = "";
+                    
 
                 }
                 catch (Exception ex)
                 {
                     Response.Write("Error!" + ex);
                 }
-            }
+            
         }
     }
 }
