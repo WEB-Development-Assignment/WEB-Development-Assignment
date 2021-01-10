@@ -1,14 +1,33 @@
 ﻿
+body {
+    background-color: yellowgreen;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: #777;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+
 .ReportBox {
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 900px;
     height: 1050px;
     padding: 80px 30px;
     box-sizing: border-box;
-    background-color: limegreen;
+    background-color: darkslategrey;
+    border:double;
+    border-color:black;
 }
 
 .lblError, .lblSuccess {
@@ -23,30 +42,30 @@
     font-weight: bold;
 }
 
-.lblNIC, .lblName, .lblImage, .lblNIC, .lblCropType, .lblMFG, .lblEXP, .lblLocation, .lblAddress {
+.lblNIC, .lblName, .lblImage, .lblNIC, .lblCropType, .lblMFG, .lblEXP, .lblLocation {
     font-weight: bold;
-    color: black;
+    color: white;
     font-size: 18px;
 }
 
-.txtNIC, .txtName, .ImageUpload, .txtCropType, .txtMFG, .txtEXP, .txtLocation, .btnSubmit {
+.txtNIC, .txtName, .ImageUpload, .txtCropType, .txtMFG, .txtEXP, .btnSubmit {
     width: 30%;
     margin-bottom: -20px;
 }
 
-.txtNIC, .txtName, .txtCropType, .txtMFG, .txtEXP, .txtLocation {
+.txtNIC, .txtName, .txtCropType, .txtMFG, .txtEXP {
     border: none;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid white;
     outline: none;
     height: 40px;
-    color: black;
+    color: seagreen;
     font-size: 12px;
     background-color: transparent;
 }
 
 .CalendarMFG {
     left: 12.5%;
-    position:absolute;
+    position: absolute;
 }
 
 .CalendarEXP {
@@ -54,8 +73,8 @@
     position: absolute;
 }
 
-::placeholder {
-    color: rgb(85, 75, 75);
+::placeholder, .ImageUpload {
+    color: silver;
 }
 
 .btnSubmit {
@@ -65,17 +84,18 @@
     outline: none;
     height: 40px;
     font-size: 16px;
-    color: #fff;
-    background-color: rgb(255, 9, 9);
+    color: black;
+    background-color: #4cff00;
     cursor: pointer;
     border-radius: 20px;
     transition: .3s ease-in-out;
     text-align: center;
 }
 
-.btnSubmit:hover {
-     background-color: #4cff00;
-}
+    .btnSubmit:hover {
+        background-color: red;
+        color: white;
+    }
 
 #footer {
     clear: both;
