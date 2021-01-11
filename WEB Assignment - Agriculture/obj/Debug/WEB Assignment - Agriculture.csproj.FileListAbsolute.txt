@@ -393,7 +393,6 @@ D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agricultu
 D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\K4os.Hash.xxHash.dll
 D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\System.Memory.dll
 D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\System.Runtime.CompilerServices.Unsafe.dll
-D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\System.Numerics.Vectors.dll
 D:\GIT_HUB\WEB Development\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\MySql.Data.xml
 C:\Users\Dhanuja Supun\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\WEB Assignment - Agriculture.dll.config
 C:\Users\Dhanuja Supun\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\WEB Assignment - Agriculture.dll
