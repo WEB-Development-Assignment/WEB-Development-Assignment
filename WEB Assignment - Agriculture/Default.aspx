@@ -88,10 +88,7 @@ html {
       <a href="Report.aspx">Report</a>
     </li>
      <li>
-      <a href="login.aspx">SignIn</a>
-    </li>
-     <li>
-      <a href="SignUp.aspx">SignUp</a>
+      <a href="login.aspx">SignUp / SignIn</a>
     </li>
   </ul>
 </nav>
