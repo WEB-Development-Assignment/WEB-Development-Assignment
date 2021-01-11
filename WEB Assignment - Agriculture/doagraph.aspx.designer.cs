@@ -10,7 +10,7 @@
 
 namespace WEB_Assignment___Agriculture
 {
-    public partial class DoA_Graph
+    public partial class doagraph
     {
 
         /// <summary>
