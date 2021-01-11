@@ -145,8 +145,12 @@
     <Content Include="Report.aspx" />
     <Content Include="StyleSheet_Reports.css" />
     <Content Include="StyleSheet_Template.css" />
+    <Content Include="webad.jpg" />
+    <Content Include="webadmin.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
+    <Content Include="doasignup.aspx" />
+    <Content Include="doalogin.aspx" />
     <None Include="Dockerfile" />
     <None Include=".dockerignore">
       <DependentUpon>Dockerfile</DependentUpon>
@@ -281,6 +285,13 @@
     <Compile Include="Report.aspx.designer.cs">
       <DependentUpon>Report.aspx</DependentUpon>
     </Compile>
+    <Compile Include="webadmin.aspx.cs">
+      <DependentUpon>webadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webadmin.aspx.designer.cs">
+      <DependentUpon>webadmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -294,6 +305,20 @@
     </Compile>
     <Compile Include="WebForm3.aspx.designer.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doasignup.aspx.cs">
+      <DependentUpon>doasignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doasignup.aspx.designer.cs">
+      <DependentUpon>doasignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doalogin.aspx.cs">
+      <DependentUpon>doalogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doalogin.aspx.designer.cs">
+      <DependentUpon>doalogin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

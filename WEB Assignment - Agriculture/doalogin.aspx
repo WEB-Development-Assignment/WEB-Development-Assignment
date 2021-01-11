@@ -1,15 +1,14 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="WEB_Assignment___Agriculture.login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="doalogin.aspx.cs" Inherits="WEB_Assignment___Agriculture.WebForm6" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>SignUp Page</title>
     <link href="StyleSheet_SignIn.css" rel="stylesheet" />
 </head>
 <body>
     <div class ="SignUpBox">
-        <img src ="https://achieve.lausd.net/cms/lib/CA01000043/Centricity/domain/779/welligentbuttons/login.png" class ="user" alt ="Alternate Text"/>
+        &nbsp;<h2>DOA Keels staff</h2>
         <h2>Sign In</h2>
         <form runat ="server" style="height: 538px; width: 402px">
             
@@ -29,11 +28,7 @@
             <asp:Button Text="Sign In" CssClass="btnSubmit" runat="server" OnClick="Unnamed5_Click" />
 
             <br />
-
-            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/SignUp.aspx">Not Registered? Sign Up</asp:HyperLink>
-           
-            <br />
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/doalogin.aspx">Sign In as Keels Or DOA Member</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/webadmin.aspx">Not Registered? Sign Up</asp:HyperLink>
             
 
         </form>

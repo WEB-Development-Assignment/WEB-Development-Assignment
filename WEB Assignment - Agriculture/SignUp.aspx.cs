@@ -85,5 +85,15 @@ namespace WEB_Assignment___Agriculture
         {
             Response.Redirect("login.aspx");
         }
+
+        protected void linkkeels_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("webadmin.aspx");
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("webadmin.aspx");
+        }
     }
 }

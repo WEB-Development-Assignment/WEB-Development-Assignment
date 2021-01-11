@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="WEB_Assignment___Agriculture.SIGN_UP" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="doasignup.aspx.cs" Inherits="WEB_Assignment___Agriculture.WebForm5" %>
 
 <!DOCTYPE html>
 
@@ -21,7 +21,7 @@
 <body>
     <div class ="SignUpBox">
         &nbsp;<h2>Sign Up</h2>
-        <form runat ="server" style="height: 738px; width: 577px">
+        <form runat ="server" style="height: 456px; width: 577px">
             <asp:Label Text="Name" CssClass="lblName" runat="server" />
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtname" Display="Dynamic" ErrorMessage="Required" ForeColor="Red" SetFocusOnError="True">*</asp:RequiredFieldValidator>
             <br />
@@ -44,15 +44,12 @@
 
             <br />
 
-            <asp:Label Text="Farm Name" CssClass="lblFarmName" runat="server" />
+            <asp:Label Text="Organiziation Name" CssClass="lblFarmName" runat="server" />
             <br />
-            <asp:TextBox runat="server" CssClass="txtFarmName" placeholder="Enter Farm Name" OnTextChanged="Unnamed8_TextChanged" ID="txtfarmname" />
-
-            <br />
-
-            <asp:Label Text="Address" CssClass="lblAddress" runat="server" />
-            <br />
-            <asp:TextBox runat="server" CssClass="txtAddress" placeholder="Enter Address" ID="txtaddress" />
+            <asp:DropDownList ID="orgdrop" runat="server" Width="124px">
+                <asp:ListItem>Keels</asp:ListItem>
+                <asp:ListItem>DOA</asp:ListItem>
+            </asp:DropDownList>
 
             <br />
 
@@ -75,16 +72,10 @@
 
             <asp:Button Text="Sign Up" CssClass="btnSubmit" runat="server" ID="signbtn" OnClick="signbtn_Click" />
 
-            <br />
-
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/login.aspx">Already Registered? Sign In</asp:HyperLink>
-           
-            <br />
-            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/webadmin.aspx">Sign Up as Keels Or DOA Member</asp:HyperLink>
-            
 
         </form>
     </div>
-        <img src ="https://img.icons8.com/fluent/48/000000/add-user-male.png" class ="user" alt ="Alternate Text"/>
+        &nbsp;
+
 </body>
 </html>

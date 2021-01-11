@@ -10,11 +10,16 @@ using MySql.Data.MySqlClient;
 
 namespace WEB_Assignment___Agriculture
 {
-    public partial class login : System.Web.UI.Page
+    public partial class WebForm6 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             Label1.Visible = false;
+        }
+
+        protected void linklog_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("webadmin.aspx");
         }
 
         protected void Unnamed5_Click(object sender, EventArgs e)
@@ -25,7 +30,7 @@ namespace WEB_Assignment___Agriculture
                 string pass = txtpass.Text;
                 MySqlConnection con = new MySqlConnection("server=127.0.0.1;user id=root;database=doa");
                 con.Open();
-                string qry = "select * from farmer where nic='" + uid + "' and Password='" + pass + "'";
+                string qry = "select * from keelsdoa where nic='" + uid + "' and Password='" + pass + "'";
                 MySqlCommand cmd = new MySqlCommand(qry, con);
                 MySqlDataReader sdr = cmd.ExecuteReader();
                 if (sdr.Read())
@@ -46,16 +51,6 @@ namespace WEB_Assignment___Agriculture
             {
                 Response.Write(ex.Message);
             }
-        }
-
-        protected void linklog_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("SignUp.aspx");
-        }
-
-        protected void linkkeels_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
