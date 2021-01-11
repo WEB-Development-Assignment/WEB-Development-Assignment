@@ -126,7 +126,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="DoA Graph.aspx" />
+    <Content Include="doagraph.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -226,12 +226,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DoA Graph.aspx.cs">
-      <DependentUpon>DoA Graph.aspx</DependentUpon>
+    <Compile Include="doagraph.aspx.cs">
+      <DependentUpon>doagraph.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DoA Graph.aspx.designer.cs">
-      <DependentUpon>DoA Graph.aspx</DependentUpon>
+    <Compile Include="doagraph.aspx.designer.cs">
+      <DependentUpon>doagraph.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
