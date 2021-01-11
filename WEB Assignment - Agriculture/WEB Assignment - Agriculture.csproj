@@ -121,6 +121,7 @@
       <DependentUpon>DB_DoA.mdf</DependentUpon>
     </Content>
     <Content Include="Contact.aspx" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -145,6 +146,7 @@
     <Content Include="Services.aspx" />
     <Content Include="Store.aspx" />
     <Content Include="StyleSheet_AboutUs.css" />
+    <Content Include="StyleSheet_ContactUs.css" />
     <Content Include="StyleSheet_Nav.css" />
     <Content Include="Report.aspx" />
     <Content Include="StyleSheet_Reports.css" />
@@ -223,6 +225,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

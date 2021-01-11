@@ -75,13 +75,13 @@ html {
       <a href="Default.aspx">Home</a>
     </li>
     <li>
-      <a href="AboutUs.aspx">About</a>
+      <a href="AboutUs.aspx">About us</a>
     </li>
     <li>
       <a href="Store.aspx">Store</a>
     </li>
     <li>
-      <a href="services.html">Services</a>
+      <a href="ContactUs.aspx">Contact us</a>
     </li>    
     <li>
       <a href="Report.aspx">Report</a>
