@@ -69,7 +69,6 @@ html {
 <div class="container">
   <span class="text1">Keells Online Store</span>
 </div>
-  
 <nav class="mynav">
  <ul>
     <li>
@@ -79,7 +78,7 @@ html {
       <a href="AboutUs.aspx">About</a>
     </li>
     <li>
-      <a href="store.html">Store</a>
+      <a href="Store.aspx">Store</a>
     </li>
     <li>
       <a href="services.html">Services</a>

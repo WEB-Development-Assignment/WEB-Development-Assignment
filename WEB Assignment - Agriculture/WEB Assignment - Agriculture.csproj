@@ -143,10 +143,13 @@
     <Content Include="Map.aspx" />
     <Content Include="Register.jpg" />
     <Content Include="Services.aspx" />
+    <Content Include="Store.aspx" />
     <Content Include="StyleSheet_AboutUs.css" />
     <Content Include="StyleSheet_Nav.css" />
     <Content Include="Report.aspx" />
     <Content Include="StyleSheet_Reports.css" />
+    <Content Include="StyleSheet_Store.css" />
+    <Content Include="StyleSheet_Store_Swiper.css" />
     <Content Include="StyleSheet_Template.css" />
     <Content Include="webad.jpg" />
     <Content Include="webadmin.aspx" />
@@ -288,6 +291,13 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="Store.aspx.cs">
+      <DependentUpon>Store.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store.aspx.designer.cs">
+      <DependentUpon>Store.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -340,6 +350,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
+    <Folder Include="Scripts\WebForms\Store\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
