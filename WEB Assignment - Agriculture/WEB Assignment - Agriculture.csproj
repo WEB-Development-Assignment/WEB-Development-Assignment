@@ -142,6 +142,7 @@
     <Content Include="login.aspx" />
     <Content Include="Map.aspx" />
     <Content Include="Register.jpg" />
+    <Content Include="Services.aspx" />
     <Content Include="StyleSheet_AboutUs.css" />
     <Content Include="StyleSheet_Nav.css" />
     <Content Include="Report.aspx" />
@@ -252,6 +253,13 @@
       <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.aspx.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
