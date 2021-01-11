@@ -1,63 +1,33 @@
-﻿body {
-    background-color: limegreen;
+﻿
+body {
+    background-color: yellowgreen;
 }
 
-#banner {
-    height: 200px;
-    border: 3px solid #E3E3E3;
-    background-image: url(https://www.globalcommunities.org/files/images/ecaf-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+a, a:link, a:visited, a:hover, a:active {
+    color: #777;
 }
 
-#wrapper ul {
-    list-style: none;
-}
-
-#wrapper ul li {
-    background-color: green;
-    border: solid 1px limegreen;
-    width: 178px;
-    height: 40px;
+h1 {
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 0;
     text-align: center;
-    line-height: 35px;
-    float: left;
-    position: relative;
-    border-radius: 10px;
-}    
-
-#wrapper ul li a {
-     text-decoration: none;
-     color: white;
-     display: block;
-     font-size: 20px;
+    font-size: 3.2rem;
 }
 
-#wrapper ul li a:hover {
-      background-color: greenyellow;
-      color: black;
-      height: 40px;
-      border-radius: 10px;
-}
 
 .ReportBox {
     position: absolute;
-    top: 135%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 900px;
-    height: 1100px;
+    height: 1050px;
     padding: 80px 30px;
     box-sizing: border-box;
-    background-color: white;
-}
-
-h2 {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    color: forestgreen;
-    font-size: 40px;
+    background-color: darkslategrey;
+    border:double;
+    border-color:black;
 }
 
 .lblError, .lblSuccess {
@@ -72,37 +42,39 @@ h2 {
     font-weight: bold;
 }
 
-.lblNIC, .lblName, .lblImage, .lblNIC, .lblCropType, .lblMFG, .lblEXP, .lblLocation, .lblAddress {
+.lblNIC, .lblName, .lblImage, .lblNIC, .lblCropType, .lblMFG, .lblEXP, .lblLocation {
     font-weight: bold;
-    color: black;
+    color: white;
     font-size: 18px;
 }
 
-.txtNIC, .txtName, .ImageUpload, .txtCropType, .txtMFG, .txtEXP, .txtLocation, .btnSubmit {
+.txtNIC, .txtName, .ImageUpload, .txtCropType, .txtMFG, .txtEXP, .btnSubmit {
     width: 30%;
     margin-bottom: -20px;
 }
 
-.txtNIC, .txtName, .txtCropType, .txtMFG, .txtEXP, .txtLocation {
+.txtNIC, .txtName, .txtCropType, .txtMFG, .txtEXP {
     border: none;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid white;
     outline: none;
     height: 40px;
-    color: black;
+    color: seagreen;
     font-size: 12px;
     background-color: transparent;
 }
 
 .CalendarMFG {
-    left: 12.9%;
+    left: 12.5%;
+    position: absolute;
 }
 
 .CalendarEXP {
-    left: 63%;
+    left: 59%;
+    position: absolute;
 }
 
-::placeholder {
-    color: rgb(85, 75, 75);
+::placeholder, .ImageUpload {
+    color: silver;
 }
 
 .btnSubmit {
@@ -112,17 +84,18 @@ h2 {
     outline: none;
     height: 40px;
     font-size: 16px;
-    color: #fff;
-    background-color: rgb(255, 9, 9);
+    color: black;
+    background-color: #4cff00;
     cursor: pointer;
     border-radius: 20px;
     transition: .3s ease-in-out;
     text-align: center;
 }
 
-.btnSubmit:hover {
-     background-color: #4cff00;
-}
+    .btnSubmit:hover {
+        background-color: red;
+        color: white;
+    }
 
 #footer {
     clear: both;

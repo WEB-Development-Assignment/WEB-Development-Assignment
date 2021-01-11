@@ -110,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AboutUs.aspx" />
     <Content Include="App_Data\Agri.mdf" />
     <Content Include="App_Data\Agri_log.ldf">
       <DependentUpon>Agri.mdf</DependentUpon>
@@ -137,10 +138,20 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="login.aspx" />
     <Content Include="Map.aspx" />
+    <Content Include="Register.jpg" />
+    <Content Include="StyleSheet_AboutUs.css" />
+    <Content Include="StyleSheet_Nav.css" />
     <Content Include="Report.aspx" />
+    <Content Include="StyleSheet_Reports.css" />
+    <Content Include="StyleSheet_Template.css" />
+    <Content Include="webad.jpg" />
+    <Content Include="webadmin.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
+    <Content Include="doasignup.aspx" />
+    <Content Include="doalogin.aspx" />
     <None Include="Dockerfile" />
     <None Include=".dockerignore">
       <DependentUpon>Dockerfile</DependentUpon>
@@ -177,7 +188,6 @@
     <Content Include="SignUp.aspx" />
     <Content Include="Site.Master" />
     <Content Include="StyleSheet_Home.css" />
-    <Content Include="StyleSheet_Reports.css" />
     <Content Include="StyleSheet_SignUp.css" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -186,6 +196,13 @@
     <Content Include="Site1.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -218,6 +235,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Map.aspx.cs">
       <DependentUpon>Map.aspx</DependentUpon>
@@ -269,6 +293,13 @@
     <Compile Include="Report.aspx.designer.cs">
       <DependentUpon>Report.aspx</DependentUpon>
     </Compile>
+    <Compile Include="webadmin.aspx.cs">
+      <DependentUpon>webadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webadmin.aspx.designer.cs">
+      <DependentUpon>webadmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -282,6 +313,20 @@
     </Compile>
     <Compile Include="WebForm3.aspx.designer.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doasignup.aspx.cs">
+      <DependentUpon>doasignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doasignup.aspx.designer.cs">
+      <DependentUpon>doasignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doalogin.aspx.cs">
+      <DependentUpon>doalogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doalogin.aspx.designer.cs">
+      <DependentUpon>doalogin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

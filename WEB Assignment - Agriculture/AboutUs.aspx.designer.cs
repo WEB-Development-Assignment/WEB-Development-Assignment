@@ -11,7 +11,7 @@ namespace WEB_Assignment___Agriculture
 {
 
 
-    public partial class _Default
+    public partial class AboutUs
     {
     }
 }
