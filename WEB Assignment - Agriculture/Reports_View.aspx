@@ -1,29 +1,15 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reports_View.aspx.cs" Inherits="WEB_Assignment___Agriculture.Reports_View" %>
 
 <!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Reports_View</title>
-
-    <link href="StyleSheet_Nav.css" rel="stylesheet" />  
+html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
     
-  
-
-    <meta charset="utf-8" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" /> 
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <asp:PlaceHolder runat="server">        
-        <script src="<%: ResolveUrl("~/Scripts/modernizr-2.5.3.js") %>"></script>
-    </asp:PlaceHolder>
-    <meta name="viewport" content="width=device-width" />
-    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <link href="StyleSheet_Nav.css" rel="stylesheet" />   
+    <title>Index</title>
 </head>
-
-
 <body>
-
+    
     <form runat="server">
 
          <nav class="mynav">
@@ -49,59 +35,37 @@
             </ul>
 	    </nav>
 
-    <asp:ScriptManager runat="server">
-        <Scripts>
-            <asp:ScriptReference Name="jquery" />
-            <asp:ScriptReference Name="jquery.ui.combined" />
-        </Scripts>
-    </asp:ScriptManager>
-    <header>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p class="site-title"><a runat="server" href="~/">your logo here</a></p>
-            </div>
-            <div class="float-right">
-                <section id="login">
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul>
-                                <li><a id="registerLink" runat="server" href="~/Account/Register.aspx">Register</a></li>
-                                <li><a id="loginLink" runat="server" href="~/Account/Login.aspx">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <p>
-                                Hello, <a runat="server" class="username" href="~/Account/Manage.aspx" title="Manage your account">
-                                    <asp:LoginName runat="server" CssClass="username" />
-                                </a>!
-                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
-                            </p>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </section>
-                <nav>
-                    <ul id="menu">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About.aspx">About</a></li>
-                        <li><a runat="server" href="~/Contact.aspx">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <div id="body">
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-        <section class="content-wrapper main-content clear-fix">
-            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-        </section>
+    <div id="dvMap" style="width: 500px; height: 500px">
     </div>
-    <footer>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </div>
-        </div>
-    </footer>
-    </form>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=API_Key"></script>
+    <script type="text/javascript">
+        var markers = @Html.Raw(ViewBag.Markers);
+        window.onload = function () {
+            var mapOptions = {
+                center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var infoWindow = new google.maps.InfoWindow();
+            var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
+            for (i = 0; i < markers.length; i++) {
+                var data = markers[i]
+                var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: data.title
+                });
+                (function (marker, data) {
+                    google.maps.event.addListener(marker, "click", function (e) {
+                        infoWindow.setContent(data.description);
+                        infoWindow.open(map, marker);
+                    });
+                })(marker, data);
+            }
+        }
+    </script>
 </body>
 </html>
+
+
