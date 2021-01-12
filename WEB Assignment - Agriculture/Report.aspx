@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Report Page</title>
+    <title>Report</title>
 
     <link href="StyleSheet_Nav.css" rel="stylesheet" />    
     <link href="StyleSheet_Reports.css" rel="stylesheet" />
@@ -86,7 +86,7 @@
                     <a href="Report.aspx">Report</a>
                 </li>
                 <li>
-                    <a href="store.html">SignUp / SignIn</a>
+                    <a href="SignUp.aspx">SignUp / SignIn</a>
                 </li>
             </ul>
 	    </nav>

@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>SignUp Page</title>
+    <title>Sign Up</title>
     <link href="StyleSheet_SignUp.css" rel="stylesheet" />
     <style type="text/css">
 

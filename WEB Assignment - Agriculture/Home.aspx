@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WEB_Assignment___Agriculture._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WEB_Assignment___Agriculture._Default" %>
 
 <!DOCTYPE html>
 
@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="Today.css">
     <link href="StyleSheet_Template.css" rel="stylesheet" />
     <link href="StyleSheet_Nav.css" rel="stylesheet" />
-  <title>Home-page</title>
+  <title>Home</title>
   <style type="text/css">
 
  body {
@@ -87,7 +87,7 @@ html {
       <a href="Report.aspx">Report</a>
     </li>
      <li>
-      <a href="login.aspx">SignUp / SignIn</a>
+      <a href="SignUp.aspx">SignUp / SignIn</a>
     </li>
   </ul>
 </nav>
