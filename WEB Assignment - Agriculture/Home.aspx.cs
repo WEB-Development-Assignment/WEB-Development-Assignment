@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WEB_Assignment___Agriculture
 {
-    public partial class Home_Farmer_ : System.Web.UI.Page
+    public partial class Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
