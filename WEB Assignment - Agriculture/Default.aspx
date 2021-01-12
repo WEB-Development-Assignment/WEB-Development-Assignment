@@ -84,7 +84,10 @@ html {
       <a href="ContactUs.aspx">Contact Us</a>
     </li> 
      <li>
-      <a href="SignUp.aspx">SignUp / SignIn</a>
+      <a href="SignUp.aspx">SignUp</a>
+    </li>
+     <li>
+      <a href="SignIn.aspx">SignIn</a>
     </li>
   </ul>
 </nav>
