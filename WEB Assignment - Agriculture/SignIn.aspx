@@ -33,7 +33,7 @@
             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/SignUp.aspx">Not Registered? Sign Up</asp:HyperLink>
            
             <br />
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/doalogin.aspx">Sign In as Keels Or DOA Member</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/DoA_Keels_SignIn.aspx">Sign In as Keels Or DOA Member</asp:HyperLink>
             
 
         </form>
