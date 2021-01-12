@@ -54,6 +54,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -120,6 +121,7 @@
       <DependentUpon>DB_DoA.mdf</DependentUpon>
     </Content>
     <Content Include="Contact.aspx" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -142,10 +144,14 @@
     <Content Include="Map.aspx" />
     <Content Include="Register.jpg" />
     <Content Include="Services.aspx" />
+    <Content Include="Store.aspx" />
     <Content Include="StyleSheet_AboutUs.css" />
+    <Content Include="StyleSheet_ContactUs.css" />
     <Content Include="StyleSheet_Nav.css" />
     <Content Include="Report.aspx" />
     <Content Include="StyleSheet_Reports.css" />
+    <Content Include="StyleSheet_Store.css" />
+    <Content Include="StyleSheet_Store_Swiper.css" />
     <Content Include="StyleSheet_Template.css" />
     <Content Include="webad.jpg" />
     <Content Include="webadmin.aspx" />
@@ -220,6 +226,13 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -287,6 +300,13 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="Store.aspx.cs">
+      <DependentUpon>Store.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store.aspx.designer.cs">
+      <DependentUpon>Store.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -339,6 +359,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
+    <Folder Include="Scripts\WebForms\Store\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
