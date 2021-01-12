@@ -1,15 +1,30 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reports_View.aspx.cs" Inherits="WEB_Assignment___Agriculture.Reports_View" %>
 
 <!DOCTYPE html>
-html>
+
+    <html lang="en">        
 <head>
-    <meta name="viewport" content="width=device-width"/>
-    
-    <link href="StyleSheet_Nav.css" rel="stylesheet" />   
-    <title>Index</title>
+    <link href="StyleSheet_Nav.css" rel="stylesheet" />
+    <title>Access Google Maps API in PHP</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/googlemap.js"></script>
+	<style type="text/css">
+		.container {
+			height: 450px;
+		}
+		#map {
+			width: 100%;
+			height: 100%;
+			border: 1px solid blue;
+		}
+		#data, #allData {
+			display: none;
+		}
+	</style>
 </head>
-<body>
-    
+
+ <body>   
     <form runat="server">
 
          <nav class="mynav">
@@ -34,38 +49,30 @@ html>
                 </li>
             </ul>
 	    </nav>
+        </form>
+    
+     <div class="container">
+		<h1>Access Google Maps API in PHP</h1>
+		<?php 
+			require 'education.php';
+			$edu = new education;
+			$coll = $edu->getCollegesBlankLatLng();
+			$coll = json_encode($coll, true);
+			echo '<div id="data">' . $coll . '</div>';
 
-    <div id="dvMap" style="width: 500px; height: 500px">
-    </div>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=API_Key"></script>
-    <script type="text/javascript">
-        var markers = @Html.Raw(ViewBag.Markers);
-        window.onload = function () {
-            var mapOptions = {
-                center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
-                zoom: 8,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var infoWindow = new google.maps.InfoWindow();
-            var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
-            for (i = 0; i < markers.length; i++) {
-                var data = markers[i]
-                var myLatlng = new google.maps.LatLng(data.lat, data.lng);
-                var marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map,
-                    title: data.title
-                });
-                (function (marker, data) {
-                    google.maps.event.addListener(marker, "click", function (e) {
-                        infoWindow.setContent(data.description);
-                        infoWindow.open(map, marker);
-                    });
-                })(marker, data);
-            }
-        }
-    </script>
+			$allData = $edu->getAllColleges();
+			$allData = json_encode($allData, true);
+			echo '<div id="allData">' . $allData . '</div>';			
+		 ?>
+		<div id="map"></div>
+	</div>
+
 </body>
+        
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt2DUw5njluDzXuF0qrnf5PxCqCUzLRV4&callback=loadMap">
+</script>
+
 </html>
 
 

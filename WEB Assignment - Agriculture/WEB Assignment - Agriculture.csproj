@@ -165,6 +165,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Home.aspx" />
     <Content Include="Reports_View.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="Register.jpg" />
@@ -285,6 +286,12 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Reports_View.aspx.cs">
       <DependentUpon>Reports_View.aspx</DependentUpon>
