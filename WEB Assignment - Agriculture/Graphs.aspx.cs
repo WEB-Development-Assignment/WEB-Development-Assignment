@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WEB_Assignment___Agriculture
 {
-    public partial class doagraph : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+	public partial class Graphs : System.Web.UI.Page
+	{
+		protected void Page_Load(object sender, EventArgs e)
+		{
 
-        }
-    }
+		}
+	}
 }
