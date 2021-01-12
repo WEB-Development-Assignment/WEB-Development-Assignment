@@ -14,7 +14,7 @@
     <nav class="mynav">     
  <ul>
     <li>
-      <a href="Home.aspx">Home</a>
+      <a href="Default.aspx">Home</a>
     </li>
     <li>
       <a href="AboutUs.aspx">About us</a>
@@ -23,7 +23,7 @@
       <a href="Store.aspx">Store</a>
     </li>
     <li>
-      <a href="ContactUs.aspx">Contact us</a>
+      <a href="ContactUs.aspx">Contact Us</a>
     </li>    
     <li>
       <a href="Report.aspx">Report</a>

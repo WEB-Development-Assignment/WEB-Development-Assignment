@@ -71,23 +71,23 @@ html {
 <nav class="mynav">
  <ul>
     <li>
-      <a href="Home.aspx">Home</a>
+      <a href="Home(DoA_Keels).aspx">Home</a>
     </li>
     <li>
       <a href="AboutUs.aspx">About us</a>
     </li>
     <li>
       <a href="Store.aspx">Store</a>
-    </li>
-    <li>
-      <a href="ContactUs.aspx">Contact us</a>
-    </li>    
+    </li>  
     <li>
       <a href="Reports_View.aspx">Report</a>
     </li>
      <li>
       <a href="Graphs.aspx">Graphs</a>
     </li>
+    <li>
+      <a href="ContactUs.aspx">Contact Us</a>
+    </li>  
      <li>
       <a href="Default.aspx">Sign Out</a>
     </li>
