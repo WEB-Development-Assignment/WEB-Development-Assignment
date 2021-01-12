@@ -16,22 +16,22 @@
 <nav class="mynav">
  <ul>
     <li>
-      <a href="Home.aspx">Home</a>
+      <a href="Default.aspx">Home</a>
     </li>
     <li>
       <a href="AboutUs.aspx">About us</a>
     </li>
     <li>
       <a href="Store.aspx">Store</a>
-    </li>
-    <li>
-      <a href="ContactUs.aspx">Contact us</a>
-    </li>    
+    </li>  
     <li>
       <a href="Report.aspx">Report</a>
     </li>
+    <li>
+      <a href="ContactUs.aspx">Contact us</a>
+    </li>  
      <li>
-      <a href="store.html">SignUp / SignIn</a>
+      <a href="SignUp.aspx">SignUp / SignIn</a>
     </li>
   </ul>
 	</nav>
