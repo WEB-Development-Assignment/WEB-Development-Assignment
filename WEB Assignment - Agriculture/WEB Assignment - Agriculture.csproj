@@ -141,7 +141,6 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="SignIn.aspx" />
-    <Content Include="Map.aspx" />
     <Content Include="Register.jpg" />
     <Content Include="Store.aspx" />
     <Content Include="StyleSheet_AboutUs.css" />
@@ -253,13 +252,6 @@
     </Compile>
     <Compile Include="SignIn.aspx.designer.cs">
       <DependentUpon>SignIn.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Map.aspx.cs">
-      <DependentUpon>Map.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Map.aspx.designer.cs">
-      <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.aspx.cs">
