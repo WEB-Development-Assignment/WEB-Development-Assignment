@@ -71,20 +71,20 @@ html {
 <nav class="mynav">
  <ul>
     <li>
-      <a href="Home.aspx">Home</a>
+      <a href="Home(Farmer).aspx">Home</a>
     </li>
     <li>
       <a href="AboutUs.aspx">About us</a>
     </li>
     <li>
       <a href="Store.aspx">Store</a>
-    </li>
-    <li>
-      <a href="ContactUs.aspx">Contact us</a>
-    </li>    
+    </li> 
     <li>
       <a href="Report.aspx">Report</a>
     </li>
+    <li>
+      <a href="ContactUs.aspx">Contact Us</a>
+    </li>  
      <li>
       <a href="Default.aspx">Sign Out</a>
     </li>
