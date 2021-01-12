@@ -11,7 +11,7 @@ namespace WEB_Assignment___Agriculture
 {
 
 
-    public partial class Home_DoA_Keels_
+    public partial class Home
     {
     }
 }

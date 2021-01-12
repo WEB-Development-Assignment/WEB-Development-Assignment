@@ -1,19 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home(Farmer).aspx.cs" Inherits="WEB_Assignment___Agriculture._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home(Farmer).aspx.cs" Inherits="WEB_Assignment___Agriculture.Home_DoA_Keels_" %>
 
 <!DOCTYPE html>
 
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head Home</title>
-        <link rel="stylesheet" type="text/css" href="Today.css">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <link rel="stylesheet" type="text/css" href="Today.css"/>
     <link href="StyleSheet_Template.css" rel="stylesheet" />
     <link href="StyleSheet_Nav.css" rel="stylesheet" />
-  <title>Home</title>
+  <title>Farmer Home</title>
   <style type="text/css">
 
  body {
   background-image: url('Images/home_background.jpg');
-  background-size:cover;
-  
+  background-size:cover;  
 }
 background-image {
   opacity: 20%;
@@ -72,7 +71,7 @@ html {
 <nav class="mynav">
  <ul>
     <li>
-      <a href="Default.aspx">Home</a>
+      <a href="Home.aspx">Home</a>
     </li>
     <li>
       <a href="AboutUs.aspx">About us</a>
