@@ -37,7 +37,7 @@ namespace WEB_Assignment___Agriculture
                 {
                     Label1.Visible = true;
                     Label1.Text = "Login Sucess......!!";
-                    Response.Redirect("Default.aspx");
+                    Response.Redirect("Home(DoA_Keels).aspx");
                 }
                 else
                 {
