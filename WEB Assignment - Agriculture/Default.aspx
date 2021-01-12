@@ -81,7 +81,7 @@ html {
       <a href="Store.aspx">Store</a>
     </li>
     <li>
-      <a href="ContactUs.aspx">Contact us</a>
+      <a href="ContactUs.aspx">Contact Us</a>
     </li> 
      <li>
       <a href="SignUp.aspx">SignUp / SignIn</a>

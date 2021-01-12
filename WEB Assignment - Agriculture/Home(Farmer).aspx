@@ -83,7 +83,7 @@ html {
       <a href="Report.aspx">Report</a>
     </li>
     <li>
-      <a href="ContactUs.aspx">Contact us</a>
+      <a href="ContactUs.aspx">Contact Us</a>
     </li>  
      <li>
       <a href="Default.aspx">Sign Out</a>
