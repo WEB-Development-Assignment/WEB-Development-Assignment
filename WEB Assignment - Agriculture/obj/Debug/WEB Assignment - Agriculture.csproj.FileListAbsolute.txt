@@ -473,7 +473,6 @@ C:\Users\Dhanuja Supun\Documents\GitHub\WEB-Development-Assignment\WEB Assignmen
 C:\Users\Dhanuja Supun\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\System.Numerics.Vectors.dll
 C:\Users\Dhanuja Supun\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\MySql.Data.xml
 C:\Users\Dhanuja Supun\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\System.Web.Optimization.xml
-C:\Users\Dhanuja Supun\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\Newtonsoft.Json.xml
 C:\Users\Dhanuja Supun\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\Antlr3.Runtime.pdb
 C:\Users\Dhanuja Supun\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Dhanuja Supun\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
