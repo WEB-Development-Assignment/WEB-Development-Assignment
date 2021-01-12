@@ -2,28 +2,29 @@
 
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Reports_View</title>
-
-    <link href="StyleSheet_Nav.css" rel="stylesheet" />  
-    
-  
-
-    <meta charset="utf-8" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" /> 
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <asp:PlaceHolder runat="server">        
-        <script src="<%: ResolveUrl("~/Scripts/modernizr-2.5.3.js") %>"></script>
-    </asp:PlaceHolder>
-    <meta name="viewport" content="width=device-width" />
-    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <html lang="en">        
+<head>
+    <link href="StyleSheet_Nav.css" rel="stylesheet" />
+    <title>Access Google Maps API in PHP</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/googlemap.js"></script>
+	<style type="text/css">
+		.container {
+			height: 450px;
+		}
+		#map {
+			width: 100%;
+			height: 100%;
+			border: 1px solid blue;
+		}
+		#data, #allData {
+			display: none;
+		}
+	</style>
 </head>
 
-
-<body>
-
+ <body>   
     <form runat="server">
 
          <nav class="mynav">
@@ -48,60 +49,30 @@
                 </li>
             </ul>
 	    </nav>
+        </form>
+    
+     <div class="container">
+		<h1>Access Google Maps API in PHP</h1>
+		<?php 
+			require 'education.php';
+			$edu = new education;
+			$coll = $edu->getCollegesBlankLatLng();
+			$coll = json_encode($coll, true);
+			echo '<div id="data">' . $coll . '</div>';
 
-    <asp:ScriptManager runat="server">
-        <Scripts>
-            <asp:ScriptReference Name="jquery" />
-            <asp:ScriptReference Name="jquery.ui.combined" />
-        </Scripts>
-    </asp:ScriptManager>
-    <header>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p class="site-title"><a runat="server" href="~/">your logo here</a></p>
-            </div>
-            <div class="float-right">
-                <section id="login">
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul>
-                                <li><a id="registerLink" runat="server" href="~/Account/Register.aspx">Register</a></li>
-                                <li><a id="loginLink" runat="server" href="~/Account/Login.aspx">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <p>
-                                Hello, <a runat="server" class="username" href="~/Account/Manage.aspx" title="Manage your account">
-                                    <asp:LoginName runat="server" CssClass="username" />
-                                </a>!
-                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
-                            </p>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </section>
-                <nav>
-                    <ul id="menu">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About.aspx">About</a></li>
-                        <li><a runat="server" href="~/Contact.aspx">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <div id="body">
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-        <section class="content-wrapper main-content clear-fix">
-            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-        </section>
-    </div>
-    <footer>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </div>
-        </div>
-    </footer>
-    </form>
+			$allData = $edu->getAllColleges();
+			$allData = json_encode($allData, true);
+			echo '<div id="allData">' . $allData . '</div>';			
+		 ?>
+		<div id="map"></div>
+	</div>
+
 </body>
+        
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt2DUw5njluDzXuF0qrnf5PxCqCUzLRV4&callback=loadMap">
+</script>
+
 </html>
+
+
