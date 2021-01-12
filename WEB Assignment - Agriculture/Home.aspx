@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WEB_Assignment___Agriculture._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WEB_Assignment___Agriculture._Default" %>
 
 <!DOCTYPE html>
 
@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="Today.css">
     <link href="StyleSheet_Template.css" rel="stylesheet" />
     <link href="StyleSheet_Nav.css" rel="stylesheet" />
-  <title>Home-page</title>
+  <title>Home</title>
   <style type="text/css">
 
  body {
@@ -69,29 +69,25 @@ html {
 <div class="container">
   <span class="text1">Keells Online Store</span>
 </div>
-  
 <nav class="mynav">
  <ul>
     <li>
       <a href="Default.aspx">Home</a>
     </li>
     <li>
-      <a href="AboutUs.aspx">About</a>
+      <a href="AboutUs.aspx">About us</a>
     </li>
     <li>
-      <a href="store.html">Store</a>
+      <a href="Store.aspx">Store</a>
     </li>
     <li>
-      <a href="services.html">Services</a>
+      <a href="ContactUs.aspx">Contact us</a>
     </li>    
     <li>
       <a href="Report.aspx">Report</a>
     </li>
      <li>
-      <a href="login.aspx">SignIn</a>
-    </li>
-     <li>
-      <a href="SignUp.aspx">SignUp</a>
+      <a href="SignUp.aspx">SignUp / SignIn</a>
     </li>
   </ul>
 </nav>

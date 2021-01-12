@@ -11,7 +11,7 @@ namespace WEB_Assignment___Agriculture
 {
 
 
-    public partial class WebForm3
+    public partial class ContactUs
     {
     }
 }

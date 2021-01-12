@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="doasignup.aspx.cs" Inherits="WEB_Assignment___Agriculture.WebForm5" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DoA_Keels_SignUp.aspx.cs" Inherits="WEB_Assignment___Agriculture.WebForm5" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>SignUp Page</title>
+    <title>DoA & Keels Staff Sign Up</title>
     <link href="StyleSheet_SignUp.css" rel="stylesheet" />
     <style type="text/css">
 
@@ -20,7 +20,8 @@
 </head>
 <body>
     <div class ="SignUpBox">
-        &nbsp;<h2>Sign Up</h2>
+        &nbsp;<h2>DoA & Keels Staff</h2>
+        <h2>Sign In</h2>
         <form runat ="server" style="height: 456px; width: 577px">
             <asp:Label Text="Name" CssClass="lblName" runat="server" />
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtname" Display="Dynamic" ErrorMessage="Required" ForeColor="Red" SetFocusOnError="True">*</asp:RequiredFieldValidator>

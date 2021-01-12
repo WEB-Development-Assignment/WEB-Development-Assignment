@@ -11,7 +11,7 @@ namespace WEB_Assignment___Agriculture
 {
 
 
-    public partial class Services
+    public partial class Store
     {
     }
 }
