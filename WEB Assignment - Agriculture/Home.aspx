@@ -1,18 +1,19 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home(DoA_Keels).aspx.cs" Inherits="WEB_Assignment___Agriculture.Home_DoA_Keels_" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WEB_Assignment___Agriculture.Home" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-     <link rel="stylesheet" type="text/css" href="Today.css"/>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head> 
+        <link rel="stylesheet" type="text/css" href="Today.css"/>
     <link href="StyleSheet_Template.css" rel="stylesheet" />
     <link href="StyleSheet_Nav.css" rel="stylesheet" />
-  <title>DoA & Keels Staff Home</title>
+  <title>Home</title>
   <style type="text/css">
 
  body {
   background-image: url('Images/home_background.jpg');
-  background-size:cover;  
+  background-size:cover;
+  
 }
 background-image {
   opacity: 20%;
@@ -81,12 +82,9 @@ html {
     </li>
     <li>
       <a href="ContactUs.aspx">Contact us</a>
-    </li>    
-    <li>
-      <a href="Report.aspx">Report</a>
-    </li>
+    </li> 
      <li>
-      <a href="Default.aspx">Sign Out</a>
+      <a href="SignUp.aspx">SignUp / SignIn</a>
     </li>
   </ul>
 </nav>

@@ -16,7 +16,7 @@
 <nav class="mynav">
  <ul>
     <li>
-      <a href="Default.aspx">Home</a>
+      <a href="Home.aspx">Home</a>
     </li>
     <li>
       <a href="AboutUs.aspx">About us</a>
