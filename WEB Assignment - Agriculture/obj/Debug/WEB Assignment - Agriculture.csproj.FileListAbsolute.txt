@@ -570,3 +570,7 @@ F:\Workspace\Assignment\New folder\WEB-Development-Assignment\WEB Assignment - A
 F:\Workspace\Assignment\New folder\WEB-Development-Assignment\WEB Assignment - Agriculture\obj\Debug\WEB Assignment - Agriculture.csproj.CopyComplete
 F:\Workspace\Assignment\New folder\WEB-Development-Assignment\WEB Assignment - Agriculture\obj\Debug\WEB Assignment - Agriculture.dll
 F:\Workspace\Assignment\New folder\WEB-Development-Assignment\WEB Assignment - Agriculture\obj\Debug\WEB Assignment - Agriculture.pdb
+C:\Users\samad\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\obj\Debug\WEB Assignment - Agriculture.csprojAssemblyReference.cache
+C:\Users\samad\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\obj\Debug\WEB Assignment - Agriculture.csproj.CoreCompileInputs.cache
+C:\Users\samad\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\obj\Debug\WEB Assignment - Agriculture.dll
+C:\Users\samad\Documents\GitHub\WEB-Development-Assignment\WEB Assignment - Agriculture\obj\Debug\WEB Assignment - Agriculture.pdb
