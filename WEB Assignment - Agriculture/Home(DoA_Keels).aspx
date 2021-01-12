@@ -84,10 +84,10 @@ html {
       <a href="ContactUs.aspx">Contact us</a>
     </li>    
     <li>
-      <a href="Report.aspx">Report</a>
+      <a href="Report_View.aspx">Report View</a>
     </li>
      <li>
-      <a href="SignUp.aspx">SignUp / SignIn</a>
+      <a href="Default.aspx">Sign Out</a>
     </li>
   </ul>
 </nav>

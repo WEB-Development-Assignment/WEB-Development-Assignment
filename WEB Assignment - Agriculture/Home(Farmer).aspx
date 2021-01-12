@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WEB_Assignment___Agriculture._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home(Farmer).aspx.cs" Inherits="WEB_Assignment___Agriculture._Default" %>
 
 <!DOCTYPE html>
 
@@ -87,7 +87,7 @@ html {
       <a href="Report.aspx">Report</a>
     </li>
      <li>
-      <a href="SignUp.aspx">SignUp / SignIn</a>
+      <a href="Default.aspx">Sign Out</a>
     </li>
   </ul>
 </nav>
