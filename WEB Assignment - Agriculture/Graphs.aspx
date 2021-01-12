@@ -1,28 +1,42 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Graphs.aspx.cs" Inherits="WEB_Assignment___Agriculture.doagraph" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Graphs.aspx.cs" Inherits="WEB_Assignment___Agriculture.Graphs" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Graph Page</title>
+    <title>Graphs</title>
+
+    <link href="StyleSheet_Nav.css" rel="stylesheet" />
+    
 </head>
 <body>
     <form id="form1" runat="server">
+        <nav class="mynav">
+ <ul>
+    <li>
+      <a href="Default.aspx">Home</a>
+    </li>
+    <li>
+      <a href="AboutUs.aspx">About us</a>
+    </li>
+    <li>
+      <a href="Store.aspx">Store</a>
+    </li>
+    <li>
+      <a href="ContactUs.aspx">Contact us</a>
+    </li>    
+    <li>
+      <a href="Reports_View.aspx">Reports View</a>
+    </li>    
+    <li>
+      <a href="Graphs.aspx">Graphs</a>
+    </li>
+     <li>
+      <a href="Default.aspx">Sign Out</a>
+    </li>
+  </ul>
+</nav>
         <div>
-
-            <asp:Chart ID="Chart1" runat="server" Height="310px" Width="350px">
-                <Series>
-                    <asp:Series Name="Series1" YValuesPerPoint="2" ChartArea="ChartArea1">
-                    </asp:Series>
-                </Series>
-                <ChartAreas>
-                    <asp:ChartArea Name="ChartArea1">
-                    </asp:ChartArea>
-                </ChartAreas>
-            </asp:Chart>
-
-            <br />
-            <br />
 
         </div>
     </form>
