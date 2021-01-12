@@ -130,7 +130,7 @@
     <Content Include="Home%28DoA_Keels%29.aspx" />
     <Content Include="Home%28Farmer%29.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="doagraph.aspx" />
+    <Content Include="Graphs.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -253,12 +253,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="doagraph.aspx.cs">
-      <DependentUpon>doagraph.aspx</DependentUpon>
+    <Compile Include="Graphs.aspx.cs">
+      <DependentUpon>Graphs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="doagraph.aspx.designer.cs">
-      <DependentUpon>doagraph.aspx</DependentUpon>
+    <Compile Include="Graphs.aspx.designer.cs">
+      <DependentUpon>Graphs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

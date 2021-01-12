@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="doagraph.aspx.cs" Inherits="WEB_Assignment___Agriculture.doagraph" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Graphs.aspx.cs" Inherits="WEB_Assignment___Agriculture.doagraph" %>
 
 <!DOCTYPE html>
 
